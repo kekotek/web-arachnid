@@ -39,7 +39,7 @@ def main():
              '- El maniquí fija medidas objetivo. Las ilustraciones existentes se usan para la identidad visual; deben compararse con estas cotas al revisar sus proporciones.',
              '- Para obtener vistas exactamente iguales del personaje, usar un único modelo 3D con estas dimensiones y girar la cámara.', '',
              '## Lámina de construcción', '',
-             '[Abrir la lámina de proporciones](assets/meshy/bruce-proportions-180cm.svg).', '']
+             '[Abrir la lámina de proporciones](assets/characters/bruce/body-reference/bruce-proportions-180cm.svg).', '']
     (ROOT / 'bruce-proportions.md').write_text('\n'.join(text))
 
     ideas_path = ROOT.parent / 'ideas.md'
@@ -69,7 +69,7 @@ def main():
     ideas_path.write_text(ideas)
 
     prompt = ['Referencia obligatoria de Bruce para nuevos dibujos y modelos.',
-              'Identidad: conservar rostro, pelo, colores y ropa de las vistas Meshy v3. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.',
+              'Identidad: conservar rostro, pelo, colores y ropa de las vistas de modelado 3D v3. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.',
               'Altura total 180 cm, desde las suelas hasta la parte superior de la cabeza de referencia. Misma escala, cámara ortográfica y suelo compartido para todas las vistas.']
     prompt += [f'{label}: {cm(value)}. {description}' for label, value, description in rows]
     prompt += [f'Altura de {LANDMARK_LABELS[key].lower()} sobre el suelo: {cm(value)}.' for key, value in sorted(points.items(), key=lambda item: -item[1])]
@@ -79,7 +79,7 @@ def main():
 
     # The raster reference is embedded unchanged. All construction geometry is vector-based.
     manifest = json.loads((ROOT / 'manifest.json').read_text())
-    front = next(asset for asset in manifest['assets'] if asset['id'] == 'bruce-for-meshy-front-v3')
+    front = next(asset for asset in manifest['assets'] if asset['id'] == 'bruce-modeling-front-v3')
     data = (ROOT / front['file']).read_bytes()
     native_w, native_h = struct.unpack('>II', data[16:24])
     left, upper, right, bottom = front['displayBounds']
@@ -161,7 +161,7 @@ def main():
             '<text x="1360" y="969" font-size="16" fill="#52616c">Mano: muñeca a punta del dedo medio.</text>',
             '<text x="55" y="1067" font-size="17" fill="#52616c">El maniquí fija las medidas objetivo. La imagen conserva la identidad visual; no es una medición automática de la ilustración.</text>',
             '<text x="55" y="1095" font-size="15" fill="#52616c">web-arachnid · Misma escala en frente, perfiles y espalda · Las skins conservan estas longitudes</text>', '</g></svg>']
-    (ROOT / 'assets/meshy/bruce-proportions-180cm.svg').write_text('\n'.join(svg)+'\n')
+    (ROOT / 'assets/characters/bruce/body-reference/bruce-proportions-180cm.svg').write_text('\n'.join(svg)+'\n')
     print('Ficha, ideas, prompt y maniquí generados: altura 180 cm; brazo 76 cm; pierna hasta el suelo 95 cm.')
 
 

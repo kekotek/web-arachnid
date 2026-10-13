@@ -13,7 +13,7 @@ from scipy.interpolate import PchipInterpolator
 from skimage.measure import marching_cubes
 
 ART = Path(__file__).resolve().parents[1]
-REFERENCES = ART / "assets" / "archive" / "meshy"
+REFERENCES = ART / "assets" / "archive" / "modeling-references"
 OUT = ART / "bruce-3d"
 HEIGHT = 1.80  # Altura canónica de Bruce en metros; la reconstrucción sigue usando referencias antiguas.
 PIXELS = 1431 / HEIGHT
@@ -135,10 +135,10 @@ def write_ply(path, vertices, colors, faces=None):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     views = {
-        "front": load_view("bruce-for-meshy-front.png", 524),
-        "back": load_view("bruce-for-meshy-back.png", 524, -1),
-        "left": load_view("bruce-for-meshy.png", 460),
-        "right": load_view("bruce-for-meshy-right.png", 560, -1),
+        "front": load_view("bruce-modeling-front.png", 524),
+        "back": load_view("bruce-modeling-back.png", 524, -1),
+        "left": load_view("bruce-modeling.png", 460),
+        "right": load_view("bruce-modeling-right.png", 560, -1),
     }
     xs = np.arange(-0.39, 0.39 + STEP, STEP, dtype=np.float32)
     ys = np.arange(-STEP * 3, HEIGHT + STEP * 4, STEP, dtype=np.float32)
@@ -224,7 +224,7 @@ def main():
     report = {
         "method": "Secciones elípticas por región corporal guiadas por proporciones de frente/perfil; contornos frontal/trasero, unión suavizada y marching cubes. Profundidad aproximada manualmente.",
         "sources": [view["name"] for view in views.values()],
-        "excludedFromCalibration": ["bruce-for-meshy-top.png", "bruce-for-meshy-bottom.png"],
+        "excludedFromCalibration": ["bruce-modeling-top.png", "bruce-modeling-bottom.png"],
         "limitations": ["Los dibujos no son vistas calibradas de un objeto 3D real.",
                         "El método no recupera concavidades ni detalles anatómicos ocultos.",
                         "Puede unir regiones que se tocan en las siluetas, como brazos y torso.",

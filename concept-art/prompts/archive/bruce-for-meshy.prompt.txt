@@ -1,6 +1,6 @@
 Herramienta: generación/edición de imágenes integrada, modo de edición.
 Entrada: assets/archive/characters/bruce-without-gloves-before-meshy.png
-Salida: assets/archive/meshy/bruce-for-meshy.png
+Salida: assets/archive/modeling-references/bruce-modeling.png
 Fondo: transparente (RGBA).
 Nota: versión aislada mediante edición generativa; no es un recorte idéntico píxel a píxel.
 

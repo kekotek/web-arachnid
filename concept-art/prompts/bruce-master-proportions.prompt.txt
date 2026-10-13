@@ -1,5 +1,5 @@
 Referencia obligatoria de Bruce para nuevos dibujos y modelos.
-Identidad: conservar rostro, pelo, colores y ropa de las vistas Meshy v3. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.
+Identidad: conservar rostro, pelo, colores y ropa de las vistas de modelado 3D v3. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.
 Altura total 180 cm, desde las suelas hasta la parte superior de la cabeza de referencia. Misma escala, cámara ortográfica y suelo compartido para todas las vistas.
 Altura total: 180 cm. Desde las suelas hasta la parte superior de la cabeza de referencia.
 Cabeza: 26 cm. Desde la parte superior de la cabeza de referencia hasta el mentón.
@@ -37,4 +37,4 @@ Izquierda y derecha comparten las mismas longitudes. El bolso permanece en la ca
 Los trajes y los guantes cambian el volumen exterior, pero no alargan huesos ni cambian la posición de las articulaciones.
 En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.
 Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.
-Las medidas del maniquí gobiernan el cuerpo; las referencias Meshy gobiernan el rostro, el peinado, la ropa y la identidad visual.
+Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual.

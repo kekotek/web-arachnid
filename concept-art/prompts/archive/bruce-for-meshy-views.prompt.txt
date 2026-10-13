@@ -1,9 +1,9 @@
 Herramienta: image_gen integrada.
-Referencia principal: assets/archive/meshy/bruce-for-meshy.png (perfil izquierdo original).
+Referencia principal: assets/archive/modeling-references/bruce-modeling.png (perfil izquierdo original).
 Salidas: cinco PNG con transparencia, conservando la pose de reposo.
 Son vistas ilustradas inferidas a partir de referencias 2D; no son capturas de un modelo 3D existente. Las vistas superior e inferior incluyen escorzo.
 
-=== assets/archive/meshy/bruce-for-meshy-right.png ===
+=== assets/archive/modeling-references/bruce-modeling-right.png ===
 
 Use case: identity-preserve.
 Asset: ONE isolated orthographic character turnaround view of Bruce, for a multi-view modeling reference.
@@ -13,7 +13,7 @@ A SINGLE brown leather pouch holding a small cyan-screen computer is attached to
 Output one full character on a genuinely transparent background, full body from hair tips to shoe soles, centered with comfortable padding, no text, no label, no ground/shadow, no grid. Portrait 1024x1536 composition like the reference, hair top near y45 and soles near y1460; same overall illustration scale.
 VIEW TO DRAW: RIGHT-SIDE PROFILE: camera is now on Bruce's anatomical RIGHT, exactly 180 degrees around from the source left-side view. He now faces LEFT in the image. Show his RIGHT ear and right cheek and his right arm hanging along right thigh. The pouch stays on the FAR LEFT hip and is mostly occluded by his torso/left hand; do not mirror the source and put a big visible pouch on his right hip. At most a small rear/far edge of the pouch may show naturally. Both feet stay planted and pointing left; preserve neutral standing pose, not a stride. Strict exact side profile, not three-quarter.
 
-=== assets/archive/meshy/bruce-for-meshy-front.png ===
+=== assets/archive/modeling-references/bruce-modeling-front.png ===
 
 Use case: identity-preserve.
 Asset: ONE isolated orthographic character turnaround view of Bruce, for a multi-view modeling reference.
@@ -23,7 +23,7 @@ A SINGLE brown leather pouch holding a small cyan-screen computer is attached to
 Output one full character on a genuinely transparent background, full body from hair tips to shoe soles, centered with comfortable padding, no text, no label, no ground/shadow, no grid. Portrait 1024x1536 composition like the reference, hair top near y45 and soles near y1460; same overall illustration scale.
 VIEW TO DRAW: FRONT VIEW, camera directly in front of Bruce, viewing his face and chest straight-on. True straight-on frontal orthographic elevation, not three-quarter. Both eyes visible, nose centered, shoulders level and symmetrical, arms hanging beside thighs. The pouch is on viewer's RIGHT because it remains on Bruce's LEFT hip. Both shoe toes point toward the camera with normal frontal foreshortening. Head and body do not turn independently. Preserve the source character's slim adolescent face and familiar hairstyle.
 
-=== assets/archive/meshy/bruce-for-meshy-back.png ===
+=== assets/archive/modeling-references/bruce-modeling-back.png ===
 
 Use case: identity-preserve.
 Asset: ONE isolated orthographic character turnaround view of Bruce, for a multi-view modeling reference.
@@ -33,14 +33,14 @@ A SINGLE brown leather pouch holding a small cyan-screen computer is attached to
 Output one full character on a genuinely transparent background, full body from hair tips to shoe soles, centered with comfortable padding, no text, no label, no ground/shadow, no grid. Portrait 1024x1536 composition like the reference, hair top near y45 and soles near y1460; same overall illustration scale.
 VIEW TO DRAW: BACK VIEW: camera directly BEHIND Bruce. Straight-on rear orthographic elevation; show back of his head/hair, back of neck, dropped orange hood centered between shoulder blades, plain orange hoodie back without graphics or seams not implied by the garment, back of blue jeans, heels of his shoes. His head still looks forward away from camera, so NO face/cheek/nose visible. Arms hang at sides, backs of relaxed hands visible. ONE pouch remains at anatomical LEFT hip so it is on viewer's LEFT in this rear view. The device screen faces outward-left, only the correct side/rear angle of device is visible. No second pouch. Match frontal input2's shoulder width, sleeve length, trouser fit, feet spacing, ground line and overall proportions. Input1 source left side; input2 frontal same character.
 
-=== assets/archive/meshy/bruce-for-meshy-top.png ===
+=== assets/archive/modeling-references/bruce-modeling-top.png ===
 
 Use case: identity-preserve. Create ONE true TOP orthographic view of the exact Bruce character in the two references (left profile and frontal). The character DOES NOT change pose: he remains standing upright on both feet, head level, arms hanging relaxed at his sides, fingers extended naturally beside thighs. ONLY THE CAMERA moves: directly above his crown, looking straight vertically DOWN along his standing body. This is a strict 90-degree overhead/plan view, not a high-angle three-quarter view, not a frontal headshot, not Bruce lying down, not bending toward the viewer.
 The image should be naturally strongly foreshortened: crown of the same brown tousled hair is central and prominent, shoulders in orange and dropped orange hood behind the neck, portions of hanging arms/hands visible outside his body silhouette; the torso, jeans and shoes mostly occluded below the head/shoulders, with only naturally visible edges or toes. Do not show a face looking up. Do not spread arms or feet to expose them. Look direction/nose projects toward BOTTOM of image and back/hood toward TOP. His anatomical LEFT is therefore image RIGHT in this plan view; one small brown pouch with cyan-screen computer stays attached to that hip, only its naturally visible top/edge, never copied to both hips.
 Preserve precisely the same clothing and style: terracotta orange hoodie, cream drawstrings on front (occluded naturally from above), navy jeans, ivory sneakers with black-edged soles, bare hands, no gloves/goggles/mask/backpack. Same slim 18-year-old, same relaxed limb positions and body widths from references. Clean illustrated fine dark ink and cel shading, not photorealism or 3D render.
 Single centered overhead figure with generous empty margin, transparent alpha background. No floor, shadow, grid, text, labels or extras. Square or portrait composition is fine; do not stretch the foreshortened body to fill portrait height. Technical multi-view character reference. Inputs: image1 exact left side pose, image2 exact front proportions. Match both.
 
-=== assets/archive/meshy/bruce-for-meshy-bottom.png ===
+=== assets/archive/modeling-references/bruce-modeling-bottom.png ===
 
 Use case: identity-preserve.
 Create ONE BOTTOM VIEW / UNDERSIDE reference of the exact Bruce character in the attached left-side and front images.

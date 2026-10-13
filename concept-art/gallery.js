@@ -2,8 +2,8 @@
   'use strict';
   const catalog = window.WEB_ARACHNID_ART;
   if (!catalog || !Array.isArray(catalog.assets)) return;
-  const labels = {todas:'Todo el arte',personajes:'Personajes',trajes:'Trajes',menus:'Menús',equipo:'Equipo',escenarios:'Aster City',historia:'Historia',meshy:'Para Meshy'};
-  const order = ['suit-homemade-scale-180cm','suit-standard-scale-180cm','suit-alien-scale-180cm','suit-neon-scale-180cm','suit-rocker-scale-180cm','suit-comic-scale-180cm','main-menu','suit-neon','suit-rocker','suit-comic','aster-city-three-layers','suit-homemade','bruce-proportions-180cm','bruce-scale-180cm','bruce-for-meshy-front-v3','bruce-without-gloves','bruce-with-gloves-v2','gloves-v2','suit-standard','suit-alien','aster-city-under-v2','aster-city-rich-v2','aster-city-alien-01-panorama','bruce-origin-one-year','bruce-for-meshy-left-v3','bruce-for-meshy-right-v3','bruce-for-meshy-back-v3','bruce-for-meshy-top-v2','bruce-for-meshy-bottom-v2'];
+  const labels = {todas:'Todo el arte',personajes:'Personajes',trajes:'Trajes',menus:'Menús',equipo:'Equipo',escenarios:'Aster City',historia:'Historia',modeling:'Modelado 3D'};
+  const order = ['suit-homemade-scale-180cm','suit-standard-scale-180cm','suit-alien-scale-180cm','suit-neon-scale-180cm','suit-rocker-scale-180cm','suit-comic-scale-180cm','main-menu','suit-neon','suit-rocker','suit-comic','aster-city-three-layers','suit-homemade','bruce-proportions-180cm','bruce-scale-180cm','bruce-modeling-front-v3','bruce-without-gloves-v2','bruce-with-gloves-v3','bruce-with-gloves-scale-180cm','bruce-with-gloves-turnaround','gloves-v2','suit-standard','suit-alien','aster-city-under-v2','aster-city-rich-v2','aster-city-alien-01-panorama','bruce-origin-one-year','bruce-modeling-left-v3','bruce-modeling-right-v3','bruce-modeling-back-v3','bruce-for-meshy-top-v2','bruce-for-meshy-bottom-v2'];
   const assets = [...catalog.assets].sort((a,b) => {
     const rank = id => order.includes(id) ? order.indexOf(id) : 100;
     return rank(a.id)-rank(b.id) || a.title.localeCompare(b.title,'es');
@@ -32,7 +32,8 @@
     const params = new URLSearchParams(location.hash.slice(1));
     state.view = ['arte','ideas','proporciones','juego','guia'].includes(params.get('vista')) ? params.get('vista') : 'arte';
     state.status = ['vigente','archivo','todas'].includes(params.get('version')) ? params.get('version') : 'vigente';
-    state.category = Object.hasOwn(labels,params.get('tema')) ? params.get('tema') : 'todas';
+    const category = params.get('tema') === 'meshy' ? 'modeling' : params.get('tema');
+    state.category = Object.hasOwn(labels,category) ? category : 'todas';
     state.query = params.get('buscar') || '';
     $('search').value = state.query;
   }
@@ -134,7 +135,7 @@
     event.preventDefault(); const target = $(state.view === 'arte' ? 'gallery' : 'document-content');
     target.focus(); target.scrollIntoView({behavior:'smooth'});
   });
-  const scaleIDs = ['bruce-for-meshy-front-v3','bruce-for-meshy-left-v3','bruce-for-meshy-right-v3','bruce-for-meshy-back-v3'];
+  const scaleIDs = ['bruce-modeling-front-v3','bruce-modeling-left-v3','bruce-modeling-right-v3','bruce-modeling-back-v3'];
   const scaleNames = ['FRENTE','PERFIL IZQUIERDO','PERFIL DERECHO','ESPALDA'];
   const bodyHeight = 480, topMargin = 25, characterHeight = catalog.characterSpec.height;
   const canvas = $('scale-canvas');

@@ -74,10 +74,16 @@ def render_scale_sheet(views, title, output, clean_alpha=False):
 def main():
     catalog = json.loads((ROOT / 'manifest.json').read_text())
     assets = {asset['id']: asset for asset in catalog['assets']}
-    ids = ['bruce-for-meshy-front-v3', 'bruce-for-meshy-left-v3',
-           'bruce-for-meshy-right-v3', 'bruce-for-meshy-back-v3']
+    ids = ['bruce-modeling-front-v3', 'bruce-modeling-left-v3',
+           'bruce-modeling-right-v3', 'bruce-modeling-back-v3']
     views = [(assets[identifier], label) for identifier, label in zip(ids, VIEW_LABELS)]
-    render_scale_sheet(views, 'Bruce', 'assets/meshy/bruce-scale-180cm.svg')
+    render_scale_sheet(views, 'Bruce', assets['bruce-scale-180cm']['file'])
+    guide = assets.get('bruce-with-gloves-scale-180cm')
+    if guide:
+        source = assets[guide['sourceAssetId']]
+        gloved_views = [({'file': source['file'], 'displayBounds': box}, label)
+                        for box, label in zip(source['viewBounds'], VIEW_LABELS)]
+        render_scale_sheet(gloved_views, 'Bruce con guantes', guide['file'], clean_alpha=True)
 
 
 if __name__ == '__main__':

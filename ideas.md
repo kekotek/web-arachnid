@@ -129,7 +129,7 @@ Las tres nuevas skins tienen láminas de frente, perfil y espalda. Sus colores y
 
 - Cada uno de los seis trajes vigentes debe tener una lámina como la de Bruce: fondo claro, frente, perfil izquierdo, perfil derecho y espalda, escala de 1,80 m, línea de suelo común y cotas cian de articulaciones.
 - Las vistas de Bruce deben usar la misma escala de **1,80 metros**, con una línea de suelo común y líneas de referencia para comparar la altura del frente, los perfiles y la espalda.
-- La cara, el peinado y las proporciones de las vistas revisadas para Meshy son la referencia principal para el resto del arte de Bruce.
+- La cara, el peinado y las proporciones de las vistas revisadas para modelado 3D son la referencia principal para el resto del arte de Bruce.
 - El arte conceptual debe mostrar a Bruce sin guantes, a Bruce con guantes y a Bruce con traje y guantes.
 - Los guantes deben tener un diseño propio, distinto del traje, y destacar visualmente tanto con la ropa de Bruce como con cualquier traje.
 - Los guantes también deben tener su propia lámina de arte conceptual.

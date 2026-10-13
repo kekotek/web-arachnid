@@ -69,7 +69,7 @@ La altura se cierra exactamente: **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El larg
 - Los trajes y los guantes cambian el volumen exterior, pero no alargan huesos ni cambian la posición de las articulaciones.
 - En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.
 - Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.
-- Las medidas del maniquí gobiernan el cuerpo; las referencias Meshy gobiernan el rostro, el peinado, la ropa y la identidad visual.
+- Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual.
 
 - La fuente única de medidas es [bruce-proportions.json](bruce-proportions.json). Si cambia una medida, se debe regenerar la ficha y comprobar que la suma de alturas sigue siendo 180 cm.
 - El maniquí fija medidas objetivo. Las ilustraciones existentes se usan para la identidad visual; deben compararse con estas cotas al revisar sus proporciones.
@@ -77,4 +77,4 @@ La altura se cierra exactamente: **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El larg
 
 ## Lámina de construcción
 
-[Abrir la lámina de proporciones](assets/meshy/bruce-proportions-180cm.svg).
+[Abrir la lámina de proporciones](assets/characters/bruce/body-reference/bruce-proportions-180cm.svg).

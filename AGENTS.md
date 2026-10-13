@@ -11,6 +11,10 @@
 
 Usar nombres en **inglés**, en minúsculas y separados por guiones cuando corresponda. Conservar los nombres convencionales `AGENTS.md` y `README.md`. Los textos de las ideas y los rótulos de la galería pueden permanecer en español. Al mover o renombrar archivos, actualizar catálogo, scripts, documentos y enlaces; conservar las versiones anteriores en `concept-art/assets/archive/`.
 
+## Organización de las variantes de Bruce
+
+Guardar el material vigente en `concept-art/assets/characters/bruce/`, con una carpeta por variante: `civilian`, `civilian-with-gloves`, `homemade-suit`, `standard-suit`, `alien-suit`, `neon-suit`, `rocker-suit` y `comic-suit`. Cada carpeta reúne el arte conceptual PNG, la lámina de medidas SVG y una subcarpeta `modeling-references` con las vistas sin rótulos para crear modelos 3D. Son referencias independientes de la herramienta de modelado; no llamar a esta carpeta `meshy`. El maniquí compartido se guarda en `body-reference`. Mantener el catálogo, los generadores y los enlaces de la galería sincronizados con esta estructura.
+
 ## Motor, estilo y plataformas del juego
 
 - El juego se desarrollará en **Unreal Engine**, con un estilo **2.5D**.
@@ -21,15 +25,15 @@ Usar nombres en **inglés**, en minúsculas y separados por guiones cuando corre
 
 ## Proporciones de Bruce: obligatorias en todo el arte
 
-Aplicar estas medidas al crear o editar dibujos, skins, láminas para Meshy y modelos de Bruce. Es el mismo personaje y el mismo cuerpo en todas las variantes. Son medidas de diseño del personaje.
+Aplicar estas medidas al crear o editar dibujos, skins, láminas para modelado 3D y modelos de Bruce. Es el mismo personaje y el mismo cuerpo en todas las variantes. Son medidas de diseño del personaje.
 
 Antes de trabajar con Bruce, consultar:
 
 - [Medidas maestras](concept-art/bruce-proportions.json): fuente única de valores, en centímetros.
 - [Ficha de proporciones](concept-art/bruce-proportions.md): definiciones de medición y alturas de articulaciones.
-- [Maniquí de construcción](concept-art/assets/meshy/bruce-proportions-180cm.svg): referencia de dimensiones.
-- [Guía de altura](concept-art/assets/meshy/bruce-scale-180cm.svg): escala compartida de las vistas.
-- [Frente para Meshy](concept-art/assets/meshy/bruce-for-meshy-front-v3.png) y sus perfiles vigentes: identidad, rostro, pelo y ropa.
+- [Maniquí de construcción](concept-art/assets/characters/bruce/body-reference/bruce-proportions-180cm.svg): referencia de dimensiones.
+- [Guía de altura](concept-art/assets/characters/bruce/civilian/bruce-scale-180cm.svg): escala compartida de las vistas.
+- [Frente para modelado 3D](concept-art/assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png) y sus perfiles vigentes: identidad, rostro, pelo y ropa.
 
 ### Medidas de referencia
 
@@ -75,7 +79,7 @@ La suma vertical debe ser **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El largo horiz
 ### Reglas de creación y revisión
 
 1. Las extremidades se miden entre centros de articulación. Ambos lados del cuerpo conservan las mismas longitudes. Mantener la complexión delgada, las manos y los pies proporcionados y una cabeza de aproximadamente una séptima parte de la altura.
-2. El maniquí y las medidas maestras gobiernan las proporciones. Las pequeñas diferencias de dibujo entre imágenes anteriores no definen un cuerpo nuevo. Usar las vistas vigentes de Meshy para conservar la identidad de Bruce.
+2. El maniquí y las medidas maestras gobiernan las proporciones. Las pequeñas diferencias de dibujo entre imágenes anteriores no definen un cuerpo nuevo. Usar las vistas vigentes de modelado 3D para conservar la identidad de Bruce.
 3. Los trajes y los guantes añaden volumen exterior; no cambian longitudes ni posiciones de articulaciones. Mantener el bolso en la cadera izquierda cuando forme parte del diseño. Bruce lleva sus guantes siempre que use un traje.
 4. Las vistas de control de frente, perfil y espalda usan cámara ortográfica, escala común y la misma línea de suelo. La marca de **1,80 m corresponde a la parte más alta de la cabeza de referencia**, nunca a los ojos o al cuello. Alinear las suelas con 0 cm. El peinado y el calzado deben respetar el límite total de la referencia.
 5. En escenas y poses de acción, conservar las longitudes anatómicas aunque la perspectiva o la flexión cambien la altura aparente. Las vistas superiores e inferiores tienen escorzo y no sirven para redefinir medidas.
