@@ -1,0 +1,1290 @@
+{
+  "project": "web-arachnid",
+  "updated": "2026-10-12",
+  "source": "../ideas.md",
+  "tool": "image_gen integrada",
+  "assets": [
+    {
+      "file": "assets/suits/suit-homemade.png",
+      "references": [
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+        "assets/archive/equipment/gloves.png",
+        "assets/archive/suits/first-suit.png"
+      ],
+      "prompt": "prompts/suit-homemade.prompt.txt",
+      "transparent": false,
+      "title": "Traje casero",
+      "category": "trajes",
+      "description": "Ropa remendada, azul y una bufanda naranja. El primer traje de Bruce.",
+      "id": "suit-homemade",
+      "status": "vigente",
+      "consistencyPrompt": "prompts/consistency/suit-homemade.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/suits/suit-homemade-before-meshy.png",
+        "assets/characters/bruce-without-gloves.png"
+      ],
+      "characterHeightMeters": 1.8,
+      "heightRepairPrompt": "prompts/consistency/suit-homemade.height.prompt.txt"
+    },
+    {
+      "file": "assets/suits/suit-standard.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-standard.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/suit-standard.repair.prompt.txt",
+      "title": "Traje normal",
+      "category": "trajes",
+      "description": "El traje tecnológico formado por nanobots, con guantes independientes.",
+      "id": "suit-standard",
+      "status": "vigente",
+      "consistencyPrompt": "prompts/consistency/suit-standard.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/suits/suit-standard-before-meshy.png",
+        "assets/characters/bruce-without-gloves.png"
+      ],
+      "characterHeightMeters": 1.8
+    },
+    {
+      "file": "assets/suits/suit-alien.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-alien.prompt.txt",
+      "transparent": false,
+      "title": "Skin alienígena",
+      "category": "trajes",
+      "description": "La silueta de web-arachnid adaptada a una apariencia alienígena.",
+      "id": "suit-alien",
+      "status": "vigente",
+      "consistencyPrompt": "prompts/consistency/suit-alien.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/suits/suit-alien-before-meshy.png",
+        "assets/characters/bruce-without-gloves.png"
+      ],
+      "characterHeightMeters": 1.8
+    },
+    {
+      "file": "assets/equipment/gloves-v2.png",
+      "references": [
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/gloves-v2.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/gloves-v2.repair.prompt.txt",
+      "finalRepairPrompt": "prompts/gloves-v2.final-repair.prompt.txt",
+      "title": "Guantes de Bruce",
+      "category": "equipo",
+      "description": "Hilos de energía, escudo y control de los nanobots.",
+      "id": "gloves-v2",
+      "status": "vigente"
+    },
+    {
+      "file": "assets/characters/bruce-with-gloves-v2.png",
+      "references": [
+        "assets/archive/characters/bruce-with-gloves.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/bruce-with-gloves-v2.prompt.txt",
+      "transparent": false,
+      "title": "Bruce con guantes",
+      "category": "personajes",
+      "description": "Bruce con ropa cotidiana, usando hilos de energía y escudo.",
+      "id": "bruce-with-gloves-v2",
+      "status": "vigente",
+      "consistencyPrompt": "prompts/consistency/bruce-with-gloves-v2.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/characters/bruce-with-gloves-v2-before-meshy.png",
+        "assets/characters/bruce-without-gloves.png"
+      ],
+      "characterHeightMeters": 1.8
+    },
+    {
+      "file": "assets/environments/aster-city-under-v2.png",
+      "references": [
+        "assets/archive/environments/aster-city-under-02-commercial-street.png"
+      ],
+      "prompt": "prompts/aster-city-under-v2.prompt.txt",
+      "transparent": false,
+      "title": "Capa subterránea",
+      "category": "escenarios",
+      "description": "El barrio de neón bajo tierra, entre viviendas, túneles y grandes soportes.",
+      "id": "aster-city-under-v2",
+      "status": "vigente"
+    },
+    {
+      "file": "assets/environments/aster-city-rich-v2.png",
+      "references": [
+        "assets/archive/environments/aster-city-rich-02-square.png"
+      ],
+      "prompt": "prompts/aster-city-rich-v2.prompt.txt",
+      "transparent": false,
+      "title": "Capa intermedia",
+      "category": "escenarios",
+      "description": "La zona rica: ladrillo, líneas simples y espacios amplios.",
+      "id": "aster-city-rich-v2",
+      "status": "vigente"
+    },
+    {
+      "file": "assets/environments/aster-city-alien-01-panorama.png",
+      "references": [
+        "assets/archive/environments/aster-city-rich-03-terraces.png"
+      ],
+      "prompt": "prompts/aster-city-alien-01-panorama.prompt.txt",
+      "transparent": false,
+      "title": "Capa alienígena",
+      "category": "escenarios",
+      "description": "La ciudad del cielo, habitada por alienígenas que viajan en plataformas y naves.",
+      "id": "aster-city-alien-01-panorama",
+      "status": "vigente"
+    },
+    {
+      "file": "assets/environments/aster-city-three-layers.png",
+      "references": [
+        "assets/archive/environments/aster-city-connection-panorama.png",
+        "assets/environments/aster-city-under-v2.png",
+        "assets/environments/aster-city-rich-v2.png",
+        "assets/environments/aster-city-alien-01-panorama.png"
+      ],
+      "prompt": "prompts/aster-city-three-layers.prompt.txt",
+      "transparent": false,
+      "title": "Aster City · Tres capas",
+      "category": "escenarios",
+      "description": "La ciudad completa: neón bajo tierra, ladrillo en la capa intermedia y alienígenas en el cielo.",
+      "id": "aster-city-three-layers",
+      "status": "vigente"
+    },
+    {
+      "file": "assets/story/bruce-origin-one-year.png",
+      "references": [
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/bruce-origin-one-year.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/bruce-origin-one-year.repair.prompt.txt",
+      "title": "Un año en el taller",
+      "category": "historia",
+      "description": "Bruce ve la invasión y dedica un año a desarrollar sus guantes.",
+      "id": "bruce-origin-one-year",
+      "status": "vigente",
+      "consistencyPrompt": "prompts/consistency/bruce-origin-one-year.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/story/bruce-origin-one-year-before-meshy.png",
+        "assets/characters/bruce-without-gloves.png"
+      ],
+      "characterHeightMeters": 1.8
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy.png",
+        "assets/archive/meshy/bruce-for-meshy-front.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-v2.prompt.txt",
+      "repairPrompt": "prompts/bruce-for-meshy-v2.repair.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Perfil izquierdo · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Referencia de proporciones revisadas. Perfil izquierdo, mirando a la derecha.",
+      "id": "bruce-for-meshy-v2",
+      "status": "archivo",
+      "displayBounds": [
+        363,
+        55,
+        689,
+        1462
+      ]
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-front.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-front-v2.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Frente · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Vista frontal con proporciones juveniles revisadas y el bolso en la cadera izquierda.",
+      "id": "bruce-for-meshy-front-v2",
+      "status": "archivo",
+      "displayBounds": [
+        280,
+        23,
+        741,
+        1483
+      ]
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-back-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-back-v2.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Espalda · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Vista posterior del mismo diseño, con el bolso en su cadera izquierda.",
+      "id": "bruce-for-meshy-back-v2",
+      "status": "archivo",
+      "displayBounds": [
+        280,
+        23,
+        744,
+        1478
+      ]
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-right-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-right-v2.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Perfil derecho · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Perfil derecho, mirando a la izquierda. El bolso queda al lado opuesto.",
+      "id": "bruce-for-meshy-right-v2",
+      "status": "archivo",
+      "displayBounds": [
+        338,
+        32,
+        644,
+        1478
+      ]
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-top-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-top-v2.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Ángulo alto · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Vista ilustrada de apoyo con escorzo; usar frente y perfiles para definir las proporciones.",
+      "id": "bruce-for-meshy-top-v2",
+      "status": "archivo",
+      "displayBounds": [
+        214,
+        43,
+        821,
+        1419
+      ]
+    },
+    {
+      "file": "assets/archive/meshy/bruce-for-meshy-bottom-v2.png",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png"
+      ],
+      "prompt": "prompts/bruce-for-meshy-bottom-v2.prompt.txt",
+      "transparent": true,
+      "title": "Bruce · Ángulo bajo · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "description": "Vista ilustrada de apoyo desde abajo; usar frente y perfiles para definir las proporciones.",
+      "id": "bruce-for-meshy-bottom-v2",
+      "status": "archivo",
+      "displayBounds": [
+        197,
+        21,
+        841,
+        1519
+      ]
+    },
+    {
+      "id": "bruce-without-gloves",
+      "file": "assets/characters/bruce-without-gloves.png",
+      "title": "Bruce sin guantes",
+      "category": "personajes",
+      "description": "Bruce con el diseño de Meshy: ropa cotidiana, proporciones revisadas y altura total de 1,80 metros.",
+      "status": "vigente",
+      "transparent": false,
+      "consistencyPrompt": "prompts/consistency/bruce-without-gloves.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png"
+      ],
+      "characterHeightMeters": 1.8,
+      "references": [],
+      "heightRepairPrompt": "prompts/consistency/bruce-without-gloves.height.prompt.txt"
+    },
+    {
+      "id": "bruce-with-gloves",
+      "file": "assets/archive/characters/bruce-with-gloves.png",
+      "title": "Bruce con guantes · Original",
+      "category": "personajes",
+      "description": "Primer estudio de Bruce con guantes, anterior a las demostraciones de hilos y escudo.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "gloves",
+      "file": "assets/archive/equipment/gloves.png",
+      "title": "Guantes · Diseño original",
+      "category": "equipo",
+      "description": "El diseño que dio origen a los guantes actuales.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "first-suit",
+      "file": "assets/archive/suits/first-suit.png",
+      "title": "Primer estudio del traje",
+      "category": "trajes",
+      "description": "Exploración tecnológica anterior. Dio origen al traje normal; el primer traje narrativo es el casero.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-connection-panorama",
+      "file": "assets/archive/environments/aster-city-connection-panorama.png",
+      "title": "Aster City · Conexión original",
+      "category": "escenarios",
+      "description": "Exploración anterior de dos zonas. La geografía vigente tiene tres capas verticales.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-under-01-panorama",
+      "file": "assets/archive/environments/aster-city-under-01-panorama.png",
+      "title": "Neón · Panorama original",
+      "category": "escenarios",
+      "description": "Exploración de ambiente anterior, con cielo abierto.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-under-02-commercial-street",
+      "file": "assets/archive/environments/aster-city-under-02-commercial-street.png",
+      "title": "Neón · Calle comercial original",
+      "category": "escenarios",
+      "description": "La referencia de ambiente utilizada para crear la capa subterránea.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-under-03-rooftops-and-metro",
+      "file": "assets/archive/environments/aster-city-under-03-rooftops-and-metro.png",
+      "title": "Neón · Azoteas y metro original",
+      "category": "escenarios",
+      "description": "Exploración anterior de azoteas y transporte urbano.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-rich-01-panorama",
+      "file": "assets/archive/environments/aster-city-rich-01-panorama.png",
+      "title": "Zona rica · Panorama original",
+      "category": "escenarios",
+      "description": "Exploración anterior de arquitectura monumental.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-rich-02-square",
+      "file": "assets/archive/environments/aster-city-rich-02-square.png",
+      "title": "Zona rica · Plaza original",
+      "category": "escenarios",
+      "description": "La referencia de ambiente utilizada para simplificar la arquitectura de la capa intermedia.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "aster-city-rich-03-terraces",
+      "file": "assets/archive/environments/aster-city-rich-03-terraces.png",
+      "title": "Zona rica · Terrazas originales",
+      "category": "escenarios",
+      "description": "Exploración anterior de terrazas y luz cálida.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy",
+      "file": "assets/archive/meshy/bruce-for-meshy.png",
+      "title": "Bruce · Perfil izquierdo original",
+      "category": "meshy",
+      "description": "Referencia anterior, con cabeza y calzado más grandes en relación con el cuerpo.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy.prompt.txt",
+      "displayBounds": [
+        311,
+        40,
+        737,
+        1469
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy-front",
+      "file": "assets/archive/meshy/bruce-for-meshy-front.png",
+      "title": "Bruce · Frente original",
+      "category": "meshy",
+      "description": "Vista anterior a la revisión de proporciones.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy-views.prompt.txt",
+      "displayBounds": [
+        283,
+        40,
+        765,
+        1470
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy-back",
+      "file": "assets/archive/meshy/bruce-for-meshy-back.png",
+      "title": "Bruce · Espalda original",
+      "category": "meshy",
+      "description": "Vista anterior a la revisión de proporciones.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy-views.prompt.txt",
+      "displayBounds": [
+        277,
+        41,
+        771,
+        1469
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy-right",
+      "file": "assets/archive/meshy/bruce-for-meshy-right.png",
+      "title": "Bruce · Perfil derecho original",
+      "category": "meshy",
+      "description": "Vista anterior a la revisión de proporciones.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy-views.prompt.txt",
+      "displayBounds": [
+        342,
+        39,
+        708,
+        1469
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy-top",
+      "file": "assets/archive/meshy/bruce-for-meshy-top.png",
+      "title": "Bruce · Ángulo alto original",
+      "category": "meshy",
+      "description": "Vista de apoyo anterior a la revisión de proporciones.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy-views.prompt.txt",
+      "displayBounds": [
+        221,
+        142,
+        1026,
+        1009
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-for-meshy-bottom",
+      "file": "assets/archive/meshy/bruce-for-meshy-bottom.png",
+      "title": "Bruce · Ángulo bajo original",
+      "category": "meshy",
+      "description": "Vista de apoyo anterior a la revisión de proporciones.",
+      "status": "archivo",
+      "transparent": true,
+      "prompt": "prompts/archive/bruce-for-meshy-views.prompt.txt",
+      "displayBounds": [
+        301,
+        11,
+        954,
+        1222
+      ],
+      "references": []
+    },
+    {
+      "id": "bruce-without-gloves-before-meshy",
+      "file": "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+      "title": "Bruce sin guantes · Antes de unificar Bruce",
+      "category": "personajes",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "status": "archivo",
+      "transparent": false,
+      "references": []
+    },
+    {
+      "file": "assets/archive/characters/bruce-with-gloves-v2-before-meshy.png",
+      "references": [
+        "assets/archive/characters/bruce-with-gloves.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/bruce-with-gloves-v2.prompt.txt",
+      "transparent": false,
+      "title": "Bruce con guantes · Antes de unificar Bruce",
+      "category": "personajes",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "id": "bruce-with-gloves-v2-before-meshy",
+      "status": "archivo"
+    },
+    {
+      "file": "assets/archive/suits/suit-homemade-before-meshy.png",
+      "references": [
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+        "assets/archive/equipment/gloves.png",
+        "assets/archive/suits/first-suit.png"
+      ],
+      "prompt": "prompts/suit-homemade.prompt.txt",
+      "transparent": false,
+      "title": "Traje casero · Antes de unificar Bruce",
+      "category": "trajes",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "id": "suit-homemade-before-meshy",
+      "status": "archivo"
+    },
+    {
+      "file": "assets/archive/suits/suit-standard-before-meshy.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-standard.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/suit-standard.repair.prompt.txt",
+      "title": "Traje normal · Antes de unificar Bruce",
+      "category": "trajes",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "id": "suit-standard-before-meshy",
+      "status": "archivo"
+    },
+    {
+      "file": "assets/archive/suits/suit-alien-before-meshy.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-alien.prompt.txt",
+      "transparent": false,
+      "title": "Skin alienígena · Antes de unificar Bruce",
+      "category": "trajes",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "id": "suit-alien-before-meshy",
+      "status": "archivo"
+    },
+    {
+      "file": "assets/archive/story/bruce-origin-one-year-before-meshy.png",
+      "references": [
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/bruce-origin-one-year.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/bruce-origin-one-year.repair.prompt.txt",
+      "title": "Un año en el taller · Antes de unificar Bruce",
+      "category": "historia",
+      "description": "Versión anterior a la unificación con las proporciones y la identidad de Bruce para Meshy.",
+      "id": "bruce-origin-one-year-before-meshy",
+      "status": "archivo"
+    },
+    {
+      "id": "bruce-scale-180cm",
+      "file": "assets/meshy/bruce-scale-180cm.svg",
+      "title": "Bruce · Altura y articulaciones",
+      "category": "meshy",
+      "status": "vigente",
+      "description": "Cuatro vistas revisadas a una altura total de 1,80 m. Las líneas cian permiten comparar las alturas objetivo de hombros, codos, caderas, muñecas, dedos y rodillas.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/meshy/bruce-for-meshy-front-v3.png",
+        "assets/meshy/bruce-for-meshy-left-v3.png",
+        "assets/meshy/bruce-for-meshy-right-v3.png",
+        "assets/meshy/bruce-for-meshy-back-v3.png"
+      ],
+      "generator": "scripts/build_scale_reference.py"
+    },
+    {
+      "id": "bruce-proportions-180cm",
+      "file": "assets/meshy/bruce-proportions-180cm.svg",
+      "title": "Bruce · Medidas maestras del cuerpo",
+      "category": "meshy",
+      "status": "vigente",
+      "description": "Maniquí de construcción y medidas objetivo para un Bruce de 1,80 m: cabeza, torso, brazos, manos, piernas, articulaciones y anchos. Incluye su referencia de identidad visual.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/meshy/bruce-for-meshy-front-v3.png"
+      ],
+      "generator": "scripts/build_character_spec.py",
+      "prompt": "prompts/bruce-master-proportions.prompt.txt"
+    },
+    {
+      "id": "main-menu",
+      "file": "assets/menus/main-menu.png",
+      "title": "Menú principal",
+      "category": "menus",
+      "status": "vigente",
+      "description": "Propuesta del menú principal con Aster City, el héroe y navegación en español.",
+      "transparent": false,
+      "references": [
+        "assets/environments/aster-city-three-layers.png",
+        "assets/suits/suit-standard.png",
+        "assets/equipment/gloves-v2.png"
+      ],
+      "prompt": "prompts/main-menu.prompt.txt"
+    },
+    {
+      "id": "suit-neon",
+      "file": "assets/suits/suit-neon-v4.png",
+      "title": "Traje neón",
+      "category": "trajes",
+      "status": "vigente",
+      "description": "Traje neón azul oscuro con pecho limpio, luces cian y magenta en hombros, brazos, costados y piernas, y los guantes originales de Bruce.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-neon-v3.png"
+      ],
+      "prompt": "prompts/suit-neon-v4.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-rocker",
+      "file": "assets/suits/suit-rocker-v2.png",
+      "title": "Traje roquero",
+      "category": "trajes",
+      "status": "vigente",
+      "description": "Traje roquero con chaqueta de cuero, tachuelas, bufanda y pelo castaño puntiagudo que sobresale de la máscara.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-rocker-v1.png"
+      ],
+      "prompt": "prompts/suit-rocker-v2.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-comic",
+      "file": "assets/suits/suit-comic-v3.png",
+      "title": "Traje estilo cómic",
+      "category": "trajes",
+      "status": "vigente",
+      "description": "Traje normal en azul con estética de cómic muy marcada: tinta gruesa, sombras negras planas y tramas de puntos visibles.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-comic-v2.png"
+      ],
+      "prompt": "prompts/suit-comic-v3.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-comic-v1",
+      "file": "assets/archive/suits/suit-comic-v1.png",
+      "title": "Traje estilo cómic · Primer diseño",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Primera propuesta con paneles claros y detalles naranjas, anterior al ajuste al traje normal.",
+      "transparent": false,
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/suits/suit-standard.png",
+        "assets/equipment/gloves-v2.png"
+      ],
+      "prompt": "prompts/suit-comic.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-rocker-v1",
+      "file": "assets/archive/suits/suit-rocker-v1.png",
+      "title": "Traje roquero · Versión anterior v1",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Chaqueta de cuero, detalles metálicos y azul sobre el cuerpo y los guantes originales del héroe.",
+      "transparent": false,
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/suits/suit-standard.png",
+        "assets/equipment/gloves-v2.png"
+      ],
+      "prompt": "prompts/suit-rocker.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-comic-v2",
+      "file": "assets/archive/suits/suit-comic-v2.png",
+      "title": "Traje estilo cómic · Versión anterior v2",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Diseño del traje normal en azul y oscuro, con contornos de tinta, colores planos y tramas de puntos. Conserva máscara, paneles y guantes.",
+      "transparent": false,
+      "references": [
+        "assets/suits/suit-standard.png",
+        "assets/archive/suits/suit-comic-v1.png",
+        "assets/equipment/gloves-v2.png"
+      ],
+      "prompt": "prompts/suit-comic-v2.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-neon-v1",
+      "file": "assets/archive/suits/suit-neon-v1.png",
+      "title": "Traje neón · Primera propuesta",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Primera propuesta del neón, antes de ampliar la araña luminosa del pecho.",
+      "transparent": false,
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/suits/suit-standard.png",
+        "assets/equipment/gloves-v2.png"
+      ],
+      "prompt": "prompts/suit-neon.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-neon-v2",
+      "file": "assets/archive/suits/suit-neon-v2.png",
+      "title": "Traje neón · Emblema de araña",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Traje neón azul oscuro con una araña cian grande y luminosa en el pecho, luces cian y magenta y los guantes originales de Bruce.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-neon-v1.png"
+      ],
+      "prompt": "prompts/suit-neon-v2.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "suit-neon-v3",
+      "file": "assets/archive/suits/suit-neon-v3.png",
+      "title": "Traje neón · Emblema abstracto",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Traje neón azul oscuro con un emblema abstracto de energía: rombo central y líneas cian ramificadas, luces magenta y los guantes originales de Bruce.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-neon-v2.png"
+      ],
+      "prompt": "prompts/suit-neon-v3.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json"
+    },
+    {
+      "id": "bruce-for-meshy-left-v3",
+      "file": "assets/meshy/bruce-for-meshy-left-v3.png",
+      "title": "Bruce · Perfil izquierdo",
+      "category": "meshy",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/meshy/bruce-for-meshy-front-v3.png",
+        "previews/bruce-dimensions-reference.jpg"
+      ],
+      "prompt": "prompts/bruce-for-meshy-left-v3.prompt.txt",
+      "repairPrompt": "prompts/bruce-for-meshy-left-v3.repair.prompt.txt",
+      "displayBounds": [
+        349,
+        15,
+        691,
+        1512
+      ]
+    },
+    {
+      "id": "bruce-for-meshy-front-v3",
+      "file": "assets/meshy/bruce-for-meshy-front-v3.png",
+      "title": "Bruce · Frente",
+      "category": "meshy",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "previews/bruce-dimensions-reference.jpg"
+      ],
+      "prompt": "prompts/bruce-for-meshy-front-v3.prompt.txt",
+      "repairPrompt": "prompts/bruce-for-meshy-front-v3.repair.prompt.txt",
+      "displayBounds": [
+        278,
+        24,
+        746,
+        1505
+      ]
+    },
+    {
+      "id": "bruce-for-meshy-back-v3",
+      "file": "assets/meshy/bruce-for-meshy-back-v3.png",
+      "title": "Bruce · Espalda",
+      "category": "meshy",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-back-v2.png",
+        "assets/meshy/bruce-for-meshy-front-v3.png",
+        "previews/bruce-dimensions-reference.jpg"
+      ],
+      "prompt": "prompts/bruce-for-meshy-back-v3.prompt.txt",
+      "repairPrompt": "prompts/bruce-for-meshy-back-v3.repair.prompt.txt",
+      "displayBounds": [
+        279,
+        22,
+        746,
+        1497
+      ],
+      "finalRepairPrompt": "prompts/bruce-for-meshy-back-v3.final-repair.prompt.txt"
+    },
+    {
+      "id": "bruce-for-meshy-right-v3",
+      "file": "assets/meshy/bruce-for-meshy-right-v3.png",
+      "title": "Bruce · Perfil derecho",
+      "category": "meshy",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-right-v2.png",
+        "assets/meshy/bruce-for-meshy-front-v3.png",
+        "previews/bruce-dimensions-reference.jpg"
+      ],
+      "prompt": "prompts/bruce-for-meshy-right-v3.prompt.txt",
+      "repairPrompt": "prompts/bruce-for-meshy-right-v3.repair.prompt.txt",
+      "displayBounds": [
+        343,
+        29,
+        650,
+        1499
+      ]
+    },
+    {
+      "id": "bruce-scale-180cm-before-v3",
+      "file": "assets/archive/meshy/bruce-scale-180cm-before-v3.svg",
+      "title": "Bruce · Altura total de 1,80 m · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "status": "archivo",
+      "description": "Frente, perfiles y espalda alineados a la misma altura total, desde las suelas hasta la parte superior de la cabeza. Guía de escala con líneas cada 10 cm.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-right-v2.png",
+        "assets/archive/meshy/bruce-for-meshy-back-v2.png"
+      ]
+    },
+    {
+      "id": "bruce-proportions-180cm-before-v3",
+      "file": "assets/archive/meshy/bruce-proportions-180cm-before-v3.svg",
+      "title": "Bruce · Medidas maestras del cuerpo · Antes de ajustar articulaciones",
+      "category": "meshy",
+      "status": "archivo",
+      "description": "Maniquí de construcción y medidas objetivo para un Bruce de 1,80 m: cabeza, torso, brazos, manos, piernas, articulaciones y anchos. Incluye su referencia de identidad visual.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/archive/meshy/bruce-for-meshy-front-v2.png"
+      ],
+      "prompt": "prompts/bruce-master-proportions.prompt.txt"
+    },
+    {
+      "id": "suit-homemade-turnaround",
+      "file": "assets/suits/suit-homemade-turnaround.png",
+      "title": "Traje casero · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-homemade.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-homemade-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-homemade-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          84,
+          56,
+          370,
+          972
+        ],
+        [
+          473,
+          55,
+          694,
+          972
+        ],
+        [
+          841,
+          56,
+          1061,
+          972
+        ],
+        [
+          1164,
+          56,
+          1452,
+          972
+        ]
+      ]
+    },
+    {
+      "id": "suit-homemade-scale-180cm",
+      "file": "assets/suits/suit-homemade-scale-180cm.svg",
+      "title": "Traje casero · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-homemade-turnaround.png"
+      ],
+      "sourceAssetId": "suit-homemade-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    },
+    {
+      "id": "suit-standard-turnaround",
+      "file": "assets/suits/suit-standard-turnaround.png",
+      "title": "Traje normal · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-standard.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-standard-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-standard-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          82,
+          80,
+          398,
+          941
+        ],
+        [
+          532,
+          83,
+          708,
+          942
+        ],
+        [
+          832,
+          81,
+          1015,
+          942
+        ],
+        [
+          1135,
+          81,
+          1455,
+          941
+        ]
+      ]
+    },
+    {
+      "id": "suit-standard-scale-180cm",
+      "file": "assets/suits/suit-standard-scale-180cm.svg",
+      "title": "Traje normal · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-standard-turnaround.png"
+      ],
+      "sourceAssetId": "suit-standard-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    },
+    {
+      "id": "suit-alien-turnaround",
+      "file": "assets/suits/suit-alien-turnaround.png",
+      "title": "Traje alienígena · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-alien.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-alien-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-alien-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          51,
+          38,
+          368,
+          972
+        ],
+        [
+          486,
+          36,
+          737,
+          972
+        ],
+        [
+          812,
+          37,
+          1065,
+          972
+        ],
+        [
+          1174,
+          35,
+          1495,
+          972
+        ]
+      ]
+    },
+    {
+      "id": "suit-alien-scale-180cm",
+      "file": "assets/suits/suit-alien-scale-180cm.svg",
+      "title": "Traje alienígena · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-alien-turnaround.png"
+      ],
+      "sourceAssetId": "suit-alien-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    },
+    {
+      "id": "suit-neon-turnaround",
+      "file": "assets/suits/suit-neon-turnaround.png",
+      "title": "Traje neón · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-neon-v4.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-neon-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-neon-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          46,
+          62,
+          360,
+          965
+        ],
+        [
+          511,
+          65,
+          695,
+          966
+        ],
+        [
+          841,
+          64,
+          1029,
+          967
+        ],
+        [
+          1176,
+          62,
+          1490,
+          965
+        ]
+      ]
+    },
+    {
+      "id": "suit-neon-scale-180cm",
+      "file": "assets/suits/suit-neon-scale-180cm.svg",
+      "title": "Traje neón · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-neon-turnaround.png"
+      ],
+      "sourceAssetId": "suit-neon-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    },
+    {
+      "id": "suit-rocker-turnaround",
+      "file": "assets/suits/suit-rocker-turnaround.png",
+      "title": "Traje roquero · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-rocker-v2.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-rocker-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-rocker-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          48,
+          40,
+          366,
+          980
+        ],
+        [
+          515,
+          38,
+          717,
+          983
+        ],
+        [
+          820,
+          37,
+          1021,
+          984
+        ],
+        [
+          1159,
+          39,
+          1486,
+          979
+        ]
+      ]
+    },
+    {
+      "id": "suit-rocker-scale-180cm",
+      "file": "assets/suits/suit-rocker-scale-180cm.svg",
+      "title": "Traje roquero · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-rocker-turnaround.png"
+      ],
+      "sourceAssetId": "suit-rocker-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    },
+    {
+      "id": "suit-comic-turnaround",
+      "file": "assets/suits/suit-comic-turnaround.png",
+      "title": "Traje cómic · Cuatro vistas",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
+      "references": [
+        "assets/suits/suit-comic-v3.png",
+        "previews/bruce-revised-proportions.jpg"
+      ],
+      "prompt": "prompts/suit-comic-turnaround.prompt.txt",
+      "repairPrompt": "prompts/suit-comic-turnaround.repair.prompt.txt",
+      "viewBounds": [
+        [
+          89,
+          50,
+          417,
+          965
+        ],
+        [
+          534,
+          50,
+          719,
+          966
+        ],
+        [
+          816,
+          50,
+          1004,
+          966
+        ],
+        [
+          1120,
+          49,
+          1462,
+          965
+        ]
+      ]
+    },
+    {
+      "id": "suit-comic-scale-180cm",
+      "file": "assets/suits/suit-comic-scale-180cm.svg",
+      "title": "Traje cómic · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
+      "references": [
+        "assets/suits/suit-comic-turnaround.png"
+      ],
+      "sourceAssetId": "suit-comic-turnaround",
+      "generator": "scripts/build_suit_scale_references.py"
+    }
+  ],
+  "schemaVersion": 2,
+  "gallery": "index.html",
+  "characterHeightMeters": 1.8,
+  "characterSpecification": "bruce-proportions.json"
+}

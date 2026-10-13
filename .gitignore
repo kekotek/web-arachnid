@@ -1,0 +1,39 @@
+# Unreal Engine: archivos temporales y generados del proyecto.
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+
+# Archivos generados de los plugins.
+/Plugins/**/Binaries/
+/Plugins/**/Intermediate/
+
+# Visual Studio y archivos de proyecto generados por Unreal Engine.
+.vs/
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.opensdf
+*.sdf
+
+# Proyectos generados para Xcode.
+*.xcodeproj/
+*.xcworkspace/
+
+# Archivos del sistema operativo.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Conservar en Git: .uproject, Config/, Content/, Source/ y Build/.
+# Build/ puede contener iconos y configuraciones necesarios para empaquetar.
+# Si un plugin incluye binarios precompilados necesarios, añadir una excepción
+# para su carpeta Binaries/ antes de incorporarlo al proyecto.

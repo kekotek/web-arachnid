@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101319">
+  <meta name="description" content="Explora el arte conceptual de web-arachnid: Bruce, sus trajes, sus guantes y las tres capas de Aster City.">
+  <title>web-arachnid — Arte conceptual</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery-data.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#gallery">Ir al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="web-arachnid, inicio"><span class="brand-mark" aria-hidden="true">w<span>·</span>a</span><span>web-arachnid</span></a>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="#vista=arte" data-view="arte" aria-current="page">Arte conceptual</a><a href="#vista=ideas" data-view="ideas">Ideas</a><a href="#vista=proporciones" data-view="proporciones">Proporciones</a><a href="#vista=juego" data-view="juego">Sobre el juego</a></nav>
+    <a class="text-link" href="#vista=guia" data-view="guia">Guía del archivo <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <div id="art-panel">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ASTER CITY · ESTUDIO VISUAL</span>
+        <h1 id="hero-title">Un héroe.<br>Tres capas.<br><span>Un mundo por construir.</span></h1>
+        <p>Bruce, sus inventos y una ciudad transformada por la invasión. Explora las ideas que dan forma a <strong>web-arachnid</strong>.</p>
+        <a class="hero-link" href="#gallery">Explorar el archivo <span aria-hidden="true">↓</span></a>
+      </div>
+      <button class="hero-art" id="hero-art" aria-label="Ampliar Aster City y sus tres capas">
+        <img src="assets/environments/aster-city-three-layers.png" alt="Las tres capas de Aster City: alienígena en el cielo, intermedia de ladrillo y subterránea de neón" fetchpriority="high">
+        <span class="hero-art-footer"><span>01 / ASTER CITY</span><span>Ver las tres capas <span aria-hidden="true">↗</span></span></span>
+      </button>
+    </section>
+    <section class="scale-section" aria-labelledby="scale-title">
+      <div class="scale-heading"><div><span class="eyebrow">REFERENCIA DEL PERSONAJE</span><h2 id="scale-title">Un mismo Bruce. <span>1,80 m.</span></h2><p>Frente, perfiles y espalda comparten la línea de suelo y la altura total. Las líneas cian marcan las alturas objetivo de sus articulaciones para comparar las proporciones.</p></div><button type="button" id="scale-toggle" aria-expanded="false" aria-controls="scale-board">Comparar las vistas <span aria-hidden="true">↗</span></button></div>
+      <div id="scale-board" class="scale-board" hidden><div class="scale-canvas" id="scale-canvas"></div><p class="scale-caption">Altura total: 1,80 m, desde las suelas hasta la parte superior de la cabeza. <a href="assets/meshy/bruce-scale-180cm.svg" download>Descargar guía de proporciones ↓</a> · <a href="#vista=proporciones">Consultar medidas del cuerpo ↗</a></p></div>
+    </section>
+    <section class="archive" id="gallery" aria-labelledby="archive-title" tabindex="-1">
+      <div class="archive-heading"><div><span class="eyebrow">DEL BOCETO AL MUNDO</span><h2 id="archive-title">El archivo visual<span class="heading-dot">.</span></h2></div><p id="catalog-summary"></p></div>
+      <div class="toolbar">
+        <div class="status-tabs" role="group" aria-label="Versiones del arte">
+          <button type="button" data-status="vigente" aria-pressed="true">Vigentes <span id="current-count"></span></button>
+          <button type="button" data-status="archivo" aria-pressed="false">Anteriores <span id="archive-count"></span></button>
+          <button type="button" data-status="todas" aria-pressed="false">Todas</button>
+        </div>
+        <label class="search"><span aria-hidden="true">⌕</span><span class="sr-only">Buscar imágenes</span><input id="search" aria-label="Buscar imágenes" type="search" placeholder="Buscar en el archivo…" autocomplete="off"></label>
+      </div>
+      <nav class="categories" id="categories" aria-label="Filtrar por tema"></nav>
+      <div class="results-heading"><p id="results-count" role="status" aria-live="polite"></p><span id="results-note">Haz clic en una imagen para ampliarla.</span></div>
+      <div class="art-grid" id="art-grid"></div>
+      <div class="empty" id="empty" hidden><span aria-hidden="true">⌕</span><h3>No encontramos esas imágenes.</h3><p>Prueba otra búsqueda o cambia el tema.</p><button type="button" id="reset">Restablecer filtros</button></div>
+      <noscript><p>Activa JavaScript para usar los filtros. Puedes consultar todas las imágenes en la <a href="README.md">guía del archivo</a>.</p></noscript>
+    </section>
+    </div>
+    <section id="document-panel" class="document-panel" hidden aria-label="Documentos del proyecto"><div class="document-header"><span class="eyebrow" id="document-kicker"></span><p>Las ideas y referencias que acompañan al archivo visual.</p></div><div class="document-layout"><nav id="document-outline" class="document-outline" aria-label="Secciones del documento"></nav><article id="document-content" class="document-content" tabindex="-1"></article></div></section>
+  </main>
+  <footer><span class="brand-name">web-arachnid</span><p>Un archivo de ideas en evolución.</p><span>ACTUALIZADO · 12 OCT 2026</span></footer>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-top"><span class="eyebrow" id="viewer-category"></span><div class="viewer-tools"><button type="button" id="zoom" aria-pressed="false">Tamaño real</button><button class="close" type="button" id="close" aria-label="Cerrar vista ampliada">✕</button></div></div>
+    <div class="viewer-layout">
+      <div class="image-stage" id="image-stage"><img id="viewer-image" alt=""><button type="button" class="image-arrow prev" id="previous" aria-label="Imagen anterior">←</button><button type="button" class="image-arrow next" id="next" aria-label="Imagen siguiente">→</button></div>
+      <aside class="viewer-info"><span class="asset-state" id="viewer-state"></span><h2 id="viewer-title"></h2><p id="viewer-description"></p><dl><div><dt>Resolución</dt><dd id="viewer-resolution"></dd></div><div><dt>Formato</dt><dd id="viewer-format"></dd></div></dl><a class="download" id="download" download>Descargar imagen <span aria-hidden="true">↓</span></a><a class="original" id="original" target="_blank" rel="noopener">Abrir imagen original <span aria-hidden="true">↗</span></a><p class="viewer-hint">← → para recorrer · Esc para cerrar</p><div class="viewer-position" id="viewer-position" aria-live="polite"></div></aside>
+    </div>
+  </dialog>
+</body>
+</html>

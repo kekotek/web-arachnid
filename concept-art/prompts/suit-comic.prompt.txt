@@ -1,0 +1,44 @@
+Use case: stylized-concept. Asset type: landscape character COSTUME concept sheet, same project format as the existing normal suit sheet. Input image 1 is Bruce's HUMAN identity/proportions master from Meshy; image 2 is the established MASK/suit-silhouette style reference; image 3 is the INVARIANT technological gloves reference. This is the SAME human Bruce wearing a new skin, not a new hero. Mandatory: slender 18-year-old, total height 1.80m, small head about one seventh of total height, ordinary hands/feet, long slim limbs, no bodybuilder. Both hands in ALL suited views wear exactly the existing gloves: ivory segmented dorsal armor over charcoal articulated material, black cuffs, circular CYAN energy cores at dorsal wrist. Gloves visually independent of suit sleeves, not recolored by the skin. Keep the familiar rounded ivory mask eye lenses. NO weapons or extra limbs. Top row three full-body standing views: true FRONT with both lenses visible, strict PROFILE, BACK; same floor and head crown line, no cropped heads/feet, no perspective. Bottom row mask/material details, unchanged glove join, palette and small action with thin flexible cyan energy THREAD emerging from wrist. Off-white textured presentation board, polished drawn 2.5D game concept art, clear outlines, controlled cel shading. Exact hero title only "web-arachnid" in lowercase with hyphen. Small exact height caption "ALTURA TOTAL: 1,80 m". NO vertical height rulers.
+Underlying body specification (creative character measurements, not text to print on the sheet):
+Referencia obligatoria de Bruce para nuevos dibujos y modelos.
+Identidad: conservar rostro, pelo, colores y ropa de las vistas Meshy v2. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.
+Altura total 180 cm, desde las suelas hasta la parte superior de la cabeza de referencia. Misma escala, cámara ortográfica y suelo compartido para todas las vistas.
+Altura total: 180 cm. Desde las suelas hasta la parte superior de la cabeza de referencia.
+Cabeza: 26 cm. Desde la parte superior de la cabeza de referencia hasta el mentón.
+Cuello: 8 cm. Desde el mentón hasta la línea de articulación de los hombros.
+Torso: 51 cm. Desde la línea de articulación de los hombros hasta la de las caderas.
+Brazo superior: 32 cm. Desde el centro del hombro hasta el centro del codo.
+Antebrazo: 26 cm. Desde el centro del codo hasta el centro de la muñeca.
+Mano: 18 cm. Desde la muñeca hasta la punta del dedo medio.
+Brazo completo: 76 cm. Hombro a punta del dedo medio: 32 + 26 + 18.
+Muslo: 46 cm. Desde el centro de la cadera hasta el centro de la rodilla.
+Rodilla a tobillo: 41 cm. Desde el centro de la rodilla hasta el centro del tobillo.
+Tobillo al suelo: 8 cm. Distancia vertical hasta las suelas; incluye pie y calzado.
+Pierna hasta el suelo: 95 cm. Desde la articulación de la cadera hasta el suelo.
+Largo del pie: 27 cm. Desde el talón hasta el dedo más largo; no se suma como altura.
+Ancho exterior de hombros: 42 cm. Ancho frontal del cuerpo; distinto de la separación entre articulaciones.
+Separación entre articulaciones de hombros: 36 cm. Distancia entre los dos centros de hombro.
+Envergadura: 188 cm. Con ambos brazos extendidos horizontalmente: 36 + 2 × 76.
+Altura de parte superior de la cabeza sobre el suelo: 180 cm.
+Altura de mentón sobre el suelo: 154 cm.
+Altura de hombros sobre el suelo: 146 cm.
+Altura de codos sobre el suelo: 114 cm.
+Altura de cintura sobre el suelo: 106 cm.
+Altura de articulación de las caderas sobre el suelo: 95 cm.
+Altura de entrepierna sobre el suelo: 90 cm.
+Altura de muñecas sobre el suelo: 88 cm.
+Altura de puntas de los dedos sobre el suelo: 70 cm.
+Altura de rodillas sobre el suelo: 49 cm.
+Altura de tobillos sobre el suelo: 8 cm.
+Altura de suelo sobre el suelo: 0 cm.
+Anchos del cuerpo (cm): {"head": 17.5, "hair_silhouette_max": 23, "shoulders_outer": 42, "shoulder_joint_spacing": 36, "hip_joint_spacing": 17, "neck": 10, "upper_arm": 6, "forearm": 5, "thigh": 11, "calf": 8.5, "chest": 32, "waist": 26, "hips": 30, "hand": 8.5, "foot": 10}.
+Profundidades del cuerpo (cm): {"head": 21, "chest": 22, "hips": 20}.
+Las longitudes de brazos y piernas se miden entre centros de articulación; la mano, desde la muñeca hasta la punta del dedo medio.
+La cabeza se mide verticalmente desde el límite superior de la referencia hasta el mentón. El eje completo termina en las suelas.
+Izquierda y derecha comparten las mismas longitudes. El bolso permanece en la cadera izquierda.
+Los trajes y los guantes cambian el volumen exterior, pero no alargan huesos ni cambian la posición de las articulaciones.
+En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.
+Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.
+Las medidas del maniquí gobiernan el cuerpo; las referencias Meshy gobiernan el rostro, el peinado, la ropa y la identidad visual.
+
+ Primary request: COMIC-STYLE costume variant, a distinct skin designed for the same game. Exact subtitle "SKIN CÓMIC", view captions "FRENTE", "PERFIL", "ESPALDA". Keep recognizable blue hero mask with round ivory eye lenses and same human proportions; design clean bold COBALT BLUE and IVORY color-block suit panels with restrained orange accents. The costume ITSELF has printed halftone dot textures on blue side panels, thick black graphic seam borders and flat ink-like shadow areas. Rendering also uses elegant bold comic INK outlines and disciplined flat cel shading, retro print texture, while preserving readable modeling views and anatomy, not a comic story page. No new powers, no muscular exaggeration, no manga giant head, no licensed character symbols/logos, no speech bubbles or sound effects. Gloves stay exact ivory segmented plates/charcoal joints/cuffs/cyan cores, rendered with comic ink treatment but same actual design. Lower material inset shows halftone printed textile at close-up; mask and original glove join detailed; one action emits thin flexible cyan energy thread. Small unmasked Bruce inset matches image 1, in same comic inking style.
