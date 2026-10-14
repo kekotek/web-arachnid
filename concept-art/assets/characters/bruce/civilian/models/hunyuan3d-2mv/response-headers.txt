@@ -1,0 +1,16 @@
+HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+date: Wed, 14 Oct 2026 16:08:45 GMT
+server: uvicorn
+x-request-id: 210b3eff-ac1d-43f2-bd43-610db7ccfb73
+x-views: front,left,back,right
+x-inference-time: 82.862
+x-peak-gpu-gb: 5.684
+content-type: model/gltf-binary
+accept-ranges: bytes
+content-disposition: attachment; filename="210b3eff-ac1d-43f2-bd43-610db7ccfb73.glb"
+content-length: 5772488
+last-modified: Wed, 14 Oct 2026 16:10:08 GMT
+etag: "1c6834554bc2132244e4adc0ac5f750f"
+

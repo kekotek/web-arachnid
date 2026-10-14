@@ -8,13 +8,14 @@
   <title>web-arachnid — Arte conceptual</title>
   <link rel="stylesheet" href="gallery.css">
   <script src="gallery-data.js" defer></script>
+  <script src="model-viewer.js" defer></script>
   <script src="gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#gallery">Ir al contenido</a>
   <header class="topbar">
     <a class="brand" href="index.html" aria-label="web-arachnid, inicio"><span class="brand-mark" aria-hidden="true">w<span>·</span>a</span><span>web-arachnid</span></a>
-    <nav class="main-nav" aria-label="Navegación principal"><a href="#vista=arte" data-view="arte" aria-current="page">Arte conceptual</a><a href="#vista=ideas" data-view="ideas">Ideas</a><a href="#vista=proporciones" data-view="proporciones">Proporciones</a><a href="#vista=juego" data-view="juego">Sobre el juego</a></nav>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="#vista=arte" data-view="arte" aria-current="page">Arte conceptual</a><a href="#vista=modelos" data-view="modelos">Modelos 3D</a><a href="#vista=ideas" data-view="ideas">Ideas</a><a href="#vista=proporciones" data-view="proporciones">Proporciones</a><a href="#vista=juego" data-view="juego">Sobre el juego</a></nav>
     <a class="text-link" href="#vista=guia" data-view="guia">Guía del archivo <span aria-hidden="true">↗</span></a>
   </header>
   <main>
@@ -32,7 +33,7 @@
       </button>
     </section>
     <section class="scale-section" aria-labelledby="scale-title">
-      <div class="scale-heading"><div><span class="eyebrow">REFERENCIA DEL PERSONAJE</span><h2 id="scale-title">Un mismo Bruce. <span>1,80 m.</span></h2><p>Frente, perfiles y espalda comparten la línea de suelo y la altura total. Las líneas cian marcan las alturas objetivo de sus articulaciones para comparar las proporciones.</p></div><button type="button" id="scale-toggle" aria-expanded="false" aria-controls="scale-board">Comparar las vistas <span aria-hidden="true">↗</span></button></div>
+      <div class="scale-heading"><div><span class="eyebrow">REFERENCIA DEL PERSONAJE</span><h2 id="scale-title">Un mismo Bruce. <span>1,80 m.</span></h2><p>Pose A: brazos a 45° del torso. Frente, perfiles y espalda conservan las mismas longitudes y la altura total de 1,80 m. Las líneas cian muestran las alturas objetivo en esta pose.</p></div><button type="button" id="scale-toggle" aria-expanded="false" aria-controls="scale-board">Comparar las vistas <span aria-hidden="true">↗</span></button></div>
       <div id="scale-board" class="scale-board" hidden><div class="scale-canvas" id="scale-canvas"></div><p class="scale-caption">Altura total: 1,80 m, desde las suelas hasta la parte superior de la cabeza. <a href="assets/characters/bruce/civilian/bruce-scale-180cm.svg" download>Descargar guía de proporciones ↓</a> · <a href="#vista=proporciones">Consultar medidas del cuerpo ↗</a></p></div>
     </section>
     <section class="archive" id="gallery" aria-labelledby="archive-title" tabindex="-1">
@@ -52,14 +53,26 @@
       <noscript><p>Activa JavaScript para usar los filtros. Puedes consultar todas las imágenes en la <a href="README.md">guía del archivo</a>.</p></noscript>
     </section>
     </div>
+    <section id="models-panel" class="models-panel" hidden aria-labelledby="models-title" tabindex="-1">
+      <div class="models-heading"><span class="eyebrow">BRUCE · MODELOS DEL PERSONAJE</span><h1 id="models-title">Bruce en <span>3D.</span></h1><p>Gira el personaje y explora sus detalles desde cualquier ángulo.</p></div>
+      <div class="models-layout">
+        <div class="model-workspace">
+          <div class="model-stage" id="model-stage" aria-label="Visor interactivo del personaje"></div>
+          <div class="model-loading" id="model-loading"><p id="model-status" role="status" aria-live="polite">Preparando visor…</p><progress id="model-progress" max="1" value="0" aria-label="Carga del modelo 3D"></progress><button id="model-retry" type="button" hidden>Volver a intentar</button></div>
+          <div class="model-camera-tools" role="group" aria-label="Vistas del modelo"><button type="button" data-orbit="0deg 90deg 105%">Frente</button><button type="button" data-orbit="270deg 90deg 105%">Izquierda</button><button type="button" data-orbit="90deg 90deg 105%">Derecha</button><button type="button" data-orbit="180deg 90deg 105%">Espalda</button><button type="button" id="model-reset">Restablecer vista</button><button type="button" id="model-rotate" aria-pressed="false">Giro automático</button></div>
+          <p class="model-help">Arrastra para girar · Rueda o pellizca para acercar · También puedes usar las flechas del teclado.</p>
+        </div>
+        <aside class="model-details"><label for="model-select">Versión de Bruce</label><select id="model-select"></select><span class="asset-state">1,80 m · MALLA DE REVISIÓN</span><h2 id="model-title"></h2><p id="model-description"></p><a class="download" id="model-glb-download" download>Descargar modelo 3D ↓</a><a class="original" id="model-blend-download" download>Archivo Blender ↓</a><details class="model-location"><summary>Carpeta del modelo</summary><code id="model-folder"></code></details><p class="model-note">Es un modelo para revisar. Todavía necesita refinamiento y un esqueleto para animarlo.</p></aside>
+      </div>
+    </section>
     <section id="document-panel" class="document-panel" hidden aria-label="Documentos del proyecto"><div class="document-header"><span class="eyebrow" id="document-kicker"></span><p>Las ideas y referencias que acompañan al archivo visual.</p></div><div class="document-layout"><nav id="document-outline" class="document-outline" aria-label="Secciones del documento"></nav><article id="document-content" class="document-content" tabindex="-1"></article></div></section>
   </main>
-  <footer><span class="brand-name">web-arachnid</span><p>Un archivo de ideas en evolución.</p><span>ACTUALIZADO · 12 OCT 2026</span></footer>
+  <footer><span class="brand-name">web-arachnid</span><p>Un archivo de ideas en evolución.</p><span>ACTUALIZADO · 14 OCT 2026</span></footer>
   <dialog id="viewer" aria-labelledby="viewer-title">
     <div class="viewer-top"><span class="eyebrow" id="viewer-category"></span><div class="viewer-tools"><button type="button" id="zoom" aria-pressed="false">Tamaño real</button><button class="close" type="button" id="close" aria-label="Cerrar vista ampliada">✕</button></div></div>
     <div class="viewer-layout">
       <div class="image-stage" id="image-stage"><img id="viewer-image" alt=""><button type="button" class="image-arrow prev" id="previous" aria-label="Imagen anterior">←</button><button type="button" class="image-arrow next" id="next" aria-label="Imagen siguiente">→</button></div>
-      <aside class="viewer-info"><span class="asset-state" id="viewer-state"></span><h2 id="viewer-title"></h2><p id="viewer-description"></p><dl><div><dt>Resolución</dt><dd id="viewer-resolution"></dd></div><div><dt>Formato</dt><dd id="viewer-format"></dd></div></dl><a class="download" id="download" download>Descargar imagen <span aria-hidden="true">↓</span></a><a class="original" id="original" target="_blank" rel="noopener">Abrir imagen original <span aria-hidden="true">↗</span></a><p class="viewer-hint">← → para recorrer · Esc para cerrar</p><div class="viewer-position" id="viewer-position" aria-live="polite"></div></aside>
+      <aside class="viewer-info"><span class="asset-state" id="viewer-state"></span><h2 id="viewer-title"></h2><p id="viewer-description"></p><dl><div><dt>Resolución</dt><dd id="viewer-resolution"></dd></div><div><dt>Formato</dt><dd id="viewer-format"></dd></div></dl><a class="download" id="download" download>Descargar imagen <span aria-hidden="true">↓</span></a><a class="download" id="view-model" hidden>Ver modelo en 3D ↗</a><a class="download" id="download-model" hidden download>Descargar modelo 3D ↓</a><a class="original" id="download-blender" hidden download>Archivo Blender ↓</a><a class="original" id="original" target="_blank" rel="noopener">Abrir imagen original <span aria-hidden="true">↗</span></a><p class="viewer-hint">← → para recorrer · Esc para cerrar</p><div class="viewer-position" id="viewer-position" aria-live="polite"></div></aside>
     </div>
   </dialog>
 </body>

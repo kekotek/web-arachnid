@@ -1,5 +1,5 @@
 Referencia obligatoria de Bruce para nuevos dibujos y modelos.
-Identidad: conservar rostro, pelo, colores y ropa de las vistas de modelado 3D v3. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.
+Identidad: conservar rostro, pelo, colores y ropa de las vistas vigentes en pose A. Proporciones del cuerpo: seguir el maniquí y las medidas de esta ficha, sin tomar las diferencias de dibujo como nuevas proporciones.
 Altura total 180 cm, desde las suelas hasta la parte superior de la cabeza de referencia. Misma escala, cámara ortográfica y suelo compartido para todas las vistas.
 Altura total: 180 cm. Desde las suelas hasta la parte superior de la cabeza de referencia.
 Cabeza: 26 cm. Desde la parte superior de la cabeza de referencia hasta el mentón.
@@ -17,18 +17,19 @@ Largo del pie: 27 cm. Desde el talón hasta el dedo más largo; no se suma como 
 Ancho exterior de hombros: 42 cm. Ancho frontal del cuerpo; distinto de la separación entre articulaciones.
 Separación entre articulaciones de hombros: 36 cm. Distancia entre los dos centros de hombro.
 Envergadura: 188 cm. Con ambos brazos extendidos horizontalmente: 36 + 2 × 76.
-Altura de parte superior de la cabeza sobre el suelo: 180 cm.
-Altura de mentón sobre el suelo: 154 cm.
-Altura de hombros sobre el suelo: 146 cm.
-Altura de codos sobre el suelo: 114 cm.
-Altura de cintura sobre el suelo: 106 cm.
-Altura de articulación de las caderas sobre el suelo: 95 cm.
-Altura de entrepierna sobre el suelo: 90 cm.
-Altura de muñecas sobre el suelo: 88 cm.
-Altura de puntas de los dedos sobre el suelo: 70 cm.
-Altura de rodillas sobre el suelo: 49 cm.
-Altura de tobillos sobre el suelo: 8 cm.
-Altura de suelo sobre el suelo: 0 cm.
+Pose obligatoria de modelado: brazos rectos a 45° del torso vertical en el plano frontal.
+Altura en pose A de parte superior de la cabeza sobre el suelo: 180 cm.
+Altura en pose A de mentón sobre el suelo: 154 cm.
+Altura en pose A de hombros sobre el suelo: 146 cm.
+Altura en pose A de codos sobre el suelo: 123,37 cm.
+Altura en pose A de cintura sobre el suelo: 106 cm.
+Altura en pose A de muñecas sobre el suelo: 104,99 cm.
+Altura en pose A de articulación de las caderas sobre el suelo: 95 cm.
+Altura en pose A de puntas de los dedos sobre el suelo: 92,26 cm.
+Altura en pose A de entrepierna sobre el suelo: 90 cm.
+Altura en pose A de rodillas sobre el suelo: 49 cm.
+Altura en pose A de tobillos sobre el suelo: 8 cm.
+Altura en pose A de suelo sobre el suelo: 0 cm.
 Anchos del cuerpo (cm): {"head": 17.5, "hair_silhouette_max": 23, "shoulders_outer": 42, "shoulder_joint_spacing": 36, "hip_joint_spacing": 17, "neck": 10, "upper_arm": 6, "forearm": 5, "thigh": 11, "calf": 8.5, "chest": 32, "waist": 26, "hips": 30, "hand": 8.5, "foot": 10}.
 Profundidades del cuerpo (cm): {"head": 21, "chest": 22, "hips": 20}.
 Las longitudes de brazos y piernas se miden entre centros de articulación; la mano, desde la muñeca hasta la punta del dedo medio.
@@ -38,3 +39,4 @@ Los trajes y los guantes cambian el volumen exterior, pero no alargan huesos ni 
 En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.
 Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.
 Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual.
+El arte conceptual de control y las referencias de modelado utilizan pose A, con ambos brazos rectos a 45 grados del torso vertical en el plano frontal. Los perfiles muestran la misma pose con escorzo; no girar los brazos hacia delante. Las alturas de codos, muñecas y dedos se derivan de estas longitudes mediante trigonometría.

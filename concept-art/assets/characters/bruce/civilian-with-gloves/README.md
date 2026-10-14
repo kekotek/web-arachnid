@@ -1,28 +1,23 @@
-# Bruce con guantes
+# Bruce con guantes · Pose A 45°
 
-Esta carpeta contiene las imágenes vigentes de esta variante de Bruce.
+Pose ortográfica para modelado: los brazos se separan lateralmente **45° del torso**, sin doblar los codos. Frente y espalda muestran las diagonales; los perfiles muestran la misma pose con escorzo.
 
-## Arte conceptual
+## Archivos vigentes
 
-- [bruce-with-gloves-v3.png](bruce-with-gloves-v3.png): apariencia, materiales, detalles o poses.
+- [Arte conceptual](bruce-with-gloves-a-pose-concept.png): cuatro vistas en pose A.
+- [Referencias para modelado 3D](modeling-references/bruce-with-gloves-a-pose-turnaround.png): el mismo conjunto sin rótulos, sobre fondo transparente.
+- [Escala y proporciones](bruce-with-gloves-scale-180cm.svg): SVG con altura total y alturas objetivo de articulaciones.
 
-## Escala y proporciones
-
-- [bruce-with-gloves-scale-180cm.svg](bruce-with-gloves-scale-180cm.svg): cuatro vistas alineadas desde 0 hasta 180 cm, con alturas objetivo de articulaciones.
-
-## Referencias para modelado 3D
-
-Las imágenes de `modeling-references/` muestran el personaje en reposo, sin rótulos. Se usarán como entrada o guía para la herramienta que cree el modelo 3D. Los archivos `turnaround` reúnen frente, ambos perfiles y espalda en un mismo PNG; Bruce sin guantes conserva cuatro PNG individuales.
-
-- [bruce-with-gloves-turnaround.png](modeling-references/bruce-with-gloves-turnaround.png)
+Los dos PNG usan las mismas ilustraciones para conservar la correspondencia entre concepto y referencia de modelado. `turnaround` reúne frente, ambos perfiles y espalda en un mismo archivo.
 
 ## Medidas compartidas
 
-Consultar las [medidas maestras](../../../../bruce-proportions.json) y el [maniquí](../body-reference/bruce-proportions-180cm.svg). Bruce mide 1,80 m; los trajes mantienen las longitudes del mismo cuerpo. Las líneas del SVG son objetivos de construcción para contrastar las ilustraciones y el modelo 3D.
+Altura total: **180 cm**. Brazo superior: **32 cm**, antebrazo: **26 cm**, mano: **18 cm**. Muslo: **46 cm**, rodilla a tobillo: **41 cm**, tobillo al suelo: **8 cm**. Los anchos y profundidades se conservan.
+
+Las alturas objetivo del brazo en esta pose son: hombros **146 cm**, codos **123,37 cm**, muñecas **104,99 cm** y dedos **92,26 cm**. Se calculan como altura del hombro menos longitud acumulada por cos(45°). Las cotas de reposo con brazos verticales permanecen documentadas en la ficha, pero no se aplican a estas láminas.
+
+Consultar las [medidas maestras](../../../../bruce-proportions.json), la [ficha](../../../../bruce-proportions.md) y el [maniquí vectorial](../body-reference/bruce-proportions-180cm.svg). Las medidas y el ángulo del maniquí son exactos; las ilustraciones se contrastan con esa geometría.
 
 ## Instrucciones de generación
 
-Las imágenes nuevas o revisadas se crearon con la herramienta integrada de generación de imágenes.
-
-- [bruce-with-gloves-v3.prompt.txt](../../../../prompts/bruce-with-gloves-v3.prompt.txt)
-- [bruce-with-gloves-turnaround.prompt.txt](../../../../prompts/bruce-with-gloves-turnaround.prompt.txt)
+Creado con la herramienta integrada de edición de imágenes. [Prompt completo](../../../../prompts/bruce-with-gloves-a-pose.prompt.txt). Las versiones previas se conservan en `assets/archive/characters/bruce/`.

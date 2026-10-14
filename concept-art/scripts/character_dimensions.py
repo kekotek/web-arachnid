@@ -1,6 +1,7 @@
 """Carga las medidas de Bruce y deriva articulaciones desde una sola fuente."""
 from pathlib import Path
 import json
+import math
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -33,11 +34,24 @@ def load_dimensions():
     spec['arm_total'] = lengths['upper_arm'] + lengths['forearm'] + lengths['hand']
     spec['leg_to_ground'] = lengths['thigh'] + lengths['calf'] + lengths['ankle_to_ground']
     spec['arm_span'] = widths['shoulder_joint_spacing'] + 2 * spec['arm_total']
+    angle = spec['modeling_pose']['arm_angle_from_torso_degrees']
+    assert angle == 45, 'La pose de modelado requiere brazos a 45° del torso.'
+    radians = math.radians(angle)
+    pose_points = dict(points)
+    arm_offsets = {'shoulder': widths['shoulder_joint_spacing'] / 2}
+    cumulative = 0
+    for key, segment in [('elbow', 'upper_arm'), ('wrist', 'forearm'), ('fingertips', 'hand')]:
+        cumulative += lengths[segment]
+        pose_points[key] = points['shoulder'] - cumulative * math.cos(radians)
+        arm_offsets[key] = arm_offsets['shoulder'] + cumulative * math.sin(radians)
+    spec['modeling_landmarks'] = pose_points
+    spec['modeling_arm_offsets'] = arm_offsets
+    spec['modeling_arm_span'] = 2 * arm_offsets['fingertips']
     return spec
 
 
 def cm(value):
-    return f'{value:g}'.replace('.', ',') + ' cm'
+    return f'{value:.2f}'.rstrip('0').rstrip('.').replace('.', ',') + ' cm'
 
 
 def measurement_rows(spec):

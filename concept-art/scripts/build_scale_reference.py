@@ -17,13 +17,15 @@ def render_scale_sheet(views, title, output, clean_alpha=False):
     character_height = spec['height']
     assert len(views) == 4
     top, body_height, floor = 135, 640, 775
-    svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">',
+    sheet_width = 2200
+    centers = [520, 1000, 1360, 1840]
+    svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{sheet_width}" height="900" viewBox="0 0 {sheet_width} 900" role="img" aria-labelledby="title desc">',
            f'<title id="title">{escape(title)}: escala y proporciones de 1,80 metros</title>',
            '<desc id="desc">Frente, perfiles y espalda alineados desde las suelas a la parte superior de la cabeza, entre 0 y 180 centímetros.</desc>',
-           '<rect width="1600" height="900" fill="#eeeae1"/>',
+           f'<rect width="{sheet_width}" height="900" fill="#eeeae1"/>',
            '<g font-family="Arial, sans-serif" fill="#24313b">',
            f'<text x="60" y="58" font-size="32" font-weight="700">{escape(title.upper())} · ESCALA Y PROPORCIONES: 1,80 m</text>',
-           '<text x="60" y="91" font-size="16" fill="#52616c">Vistas revisadas · Líneas cian: alturas objetivo de hombros, codos, caderas, muñecas, dedos y rodillas.</text>']
+           '<text x="60" y="91" font-size="16" fill="#52616c">POSE A · Brazos a 45° del torso · Mismas longitudes anatómicas · Líneas cian: alturas objetivo en esta pose.</text>']
     # Embed each unchanged PNG once; four suit views share one source board.
     sources = {}
     svg.append('<defs>')
@@ -43,7 +45,7 @@ def render_scale_sheet(views, title, output, clean_alpha=False):
         left, upper, right, bottom = asset['displayBounds']
         factor = body_height / (bottom - upper)
         visible_width = (right - left) * factor
-        center = 320 + index * 350
+        center = centers[index]
         start = center - visible_width / 2
         clip = f'figure-{index}'
         svg.append(f'<defs><clipPath id="{clip}"><rect x="{start}" y="{top}" width="{visible_width}" height="{body_height}"/></clipPath></defs>')
@@ -53,18 +55,21 @@ def render_scale_sheet(views, title, output, clean_alpha=False):
     for centimeters in range(0, 181, 10):
         y = top + body_height * (1 - centimeters / character_height)
         major = centimeters % 30 == 0
-        svg.append(f'<line x1="123" y1="{y}" x2="1510" y2="{y}" stroke="#536674" stroke-opacity="{0.48 if major else 0.18}" stroke-dasharray="5 5"/>')
+        svg.append(f'<line x1="123" y1="{y}" x2="2140" y2="{y}" stroke="#536674" stroke-opacity="{0.48 if major else 0.18}" stroke-dasharray="5 5"/>')
         svg.append(f'<line x1="115" y1="{y}" x2="123" y2="{y}" stroke="#536674"/>')
         if major:
             label = '1,80 m' if centimeters == 180 else f'{centimeters} cm'
             svg.append(f'<text x="105" y="{y+5}" text-anchor="end" font-size="15">{label}</text>')
     svg.append(f'<line x1="123" y1="{top}" x2="123" y2="{floor}" stroke="#536674"/>')
     for key, label in [('shoulder','Hombros'),('elbow','Codos'),('hip','Caderas'),('wrist','Muñecas'),('fingertips','Dedos'),('knee','Rodillas')]:
-        centimeters = spec['landmarks'][key]
+        centimeters = spec['modeling_landmarks'][key]
         y = top + body_height * (1 - centimeters / character_height)
-        svg.append(f'<line x1="222" y1="{y}" x2="1510" y2="{y}" stroke="#087e83" stroke-opacity=".6" stroke-dasharray="3 7"/>')
-        svg.append(f'<text x="214" y="{y+4}" text-anchor="end" font-size="12" fill="#087e83">{centimeters:g} · {label}</text>')
-    svg.append('<text x="800" y="863" text-anchor="middle" font-size="14" fill="#52616c">web-arachnid · Referencia de escala · 1,80 m = altura total del personaje</text></g></svg>')
+        svg.append(f'<line x1="222" y1="{y}" x2="2140" y2="{y}" stroke="#087e83" stroke-opacity=".6" stroke-dasharray="3 7"/>')
+        # Nearby hip/finger targets get separate label baselines and leader lines.
+        offset = -7 if key == 'hip' else 10 if key == 'fingertips' else 4
+        label_value = f'{centimeters:.2f}'.rstrip('0').rstrip('.').replace('.', ',')
+        svg.append(f'<text x="214" y="{y+offset}" text-anchor="end" font-size="12" fill="#087e83">{label_value} · {label}</text>')
+    svg.append('<text x="1100" y="863" text-anchor="middle" font-size="14" fill="#52616c">web-arachnid · Altura 180 cm · Brazo: 32 + 26 + 18 = 76 cm · Pierna: 46 + 41 + 8 = 95 cm</text></g></svg>')
     path = ROOT / output
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text('\n'.join(svg) + '\n')
@@ -74,16 +79,13 @@ def render_scale_sheet(views, title, output, clean_alpha=False):
 def main():
     catalog = json.loads((ROOT / 'manifest.json').read_text())
     assets = {asset['id']: asset for asset in catalog['assets']}
-    ids = ['bruce-modeling-front-v3', 'bruce-modeling-left-v3',
-           'bruce-modeling-right-v3', 'bruce-modeling-back-v3']
-    views = [(assets[identifier], label) for identifier, label in zip(ids, VIEW_LABELS)]
-    render_scale_sheet(views, 'Bruce', assets['bruce-scale-180cm']['file'])
-    guide = assets.get('bruce-with-gloves-scale-180cm')
-    if guide:
+    for identifier in ['bruce-scale-180cm', 'bruce-with-gloves-scale-180cm']:
+        guide = assets[identifier]
         source = assets[guide['sourceAssetId']]
-        gloved_views = [({'file': source['file'], 'displayBounds': box}, label)
-                        for box, label in zip(source['viewBounds'], VIEW_LABELS)]
-        render_scale_sheet(gloved_views, 'Bruce con guantes', guide['file'], clean_alpha=True)
+        views = [({'file': source['file'], 'displayBounds': box}, label)
+                 for box, label in zip(source['viewBounds'], VIEW_LABELS)]
+        title = 'Bruce' if identifier == 'bruce-scale-180cm' else 'Bruce con guantes'
+        render_scale_sheet(views, title, guide['file'], clean_alpha=True)
 
 
 if __name__ == '__main__':

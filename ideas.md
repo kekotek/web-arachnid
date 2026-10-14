@@ -41,6 +41,7 @@ Bruce tendrá medidas de diseño fijas para conservar el mismo cuerpo en todas l
 
 - La altura total se conserva mediante la suma **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**.
 - En reposo, los hombros están a 146 cm del suelo; los codos a 114 cm; las muñecas a 88 cm; las puntas de los dedos a 70 cm; las caderas a 95 cm y las rodillas a 49 cm.
+- La pose de modelado usa brazos a 45° del torso; codos a 123,37 cm, muñecas a 104,99 cm y dedos a 92,26 cm del suelo.
 - Ambos lados del cuerpo tienen las mismas longitudes. Los trajes conservan el esqueleto y solo añaden volumen exterior.
 - La ficha completa y las líneas de construcción están en [la guía de proporciones](concept-art/bruce-proportions.md).
 

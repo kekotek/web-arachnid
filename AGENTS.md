@@ -33,7 +33,7 @@ Antes de trabajar con Bruce, consultar:
 - [Ficha de proporciones](concept-art/bruce-proportions.md): definiciones de medición y alturas de articulaciones.
 - [Maniquí de construcción](concept-art/assets/characters/bruce/body-reference/bruce-proportions-180cm.svg): referencia de dimensiones.
 - [Guía de altura](concept-art/assets/characters/bruce/civilian/bruce-scale-180cm.svg): escala compartida de las vistas.
-- [Frente para modelado 3D](concept-art/assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png) y sus perfiles vigentes: identidad, rostro, pelo y ropa.
+- [Cuatro vistas en pose A](concept-art/assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png): identidad, rostro, pelo y ropa.
 
 ### Medidas de referencia
 
@@ -73,6 +73,14 @@ Antes de trabajar con Bruce, consultar:
 | Pie | 10 cm | — |
 
 Alturas de control desde el suelo, en reposo: cabeza 180 cm, mentón 154 cm, hombros 146 cm, codos 114 cm, cintura 106 cm, caderas 95 cm, entrepierna 90 cm, muñecas 88 cm, puntas de los dedos 70 cm, rodillas 49 cm y tobillos 8 cm.
+
+### Pose obligatoria del arte para modelado
+
+Todo el arte conceptual de control, los SVG de medidas y las referencias de modelado de las ocho variantes deben usar **pose A: ambos brazos rectos a 45° del torso vertical**, separados lateralmente en el plano frontal. Conservar las longitudes definidas: brazo superior 32 cm, antebrazo 26 cm y mano 18 cm; no cambiar el cuerpo para acomodar la pose. Los codos no se flexionan. Mantener las manos relajadas y los dedos legibles.
+
+Las cotas anteriores de codos, muñecas y dedos describen brazos junto al cuerpo. En pose A, calcular la altura como `146 − longitud acumulada × cos(45°)`: hombros 146 cm, codos **123,37 cm**, muñecas **104,99 cm** y dedos **92,26 cm**. Cabeza, cuello, torso, piernas y altura total de 180 cm conservan sus valores. La separación entre puntas de los dedos es 143,48 cm; los 188 cm de envergadura corresponden a brazos horizontales.
+
+Frente y espalda muestran las diagonales de 45°. Los perfiles muestran esa misma pose con escorzo: no girar los brazos hacia delante para dibujar otra diagonal de 45° en la imagen lateral. Las cotas de longitud del brazo deben seguir sus segmentos diagonales; su caída vertical no es su longitud anatómica. Las escenas narrativas y poses de acción siguen conservando las longitudes del mismo cuerpo.
 
 La suma vertical debe ser **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El largo horizontal del pie no se suma a la altura. El brazo completo mide **32 + 26 + 18 = 76 cm**.
 

@@ -1,0 +1,28 @@
+{
+  "endpoint": "http://192.168.40.243:8001/generate",
+  "model": "tencent/Hunyuan3D-2mv",
+  "variant": "civilian",
+  "date": "2026-10-14",
+  "status": "completed",
+  "inputs": "../../modeling-references/hunyuan3d-2mv/inputs.json",
+  "parameters": {
+    "steps": 30,
+    "octree_resolution": 380,
+    "num_chunks": 20000,
+    "seed": 12345
+  },
+  "target_height_meters": 1.8,
+  "target_pose": "A-pose, 45 degrees from vertical torso",
+  "output_type": "shape generation",
+  "validation": "Altura total verificada en Blender. Rostro y dedos necesitan refinamiento; las medidas de segmentos del cuerpo y los ángulos no se han validado con un esqueleto.",
+  "request_id": "210b3eff-ac1d-43f2-bd43-610db7ccfb73",
+  "inference_seconds": 82.862,
+  "peak_gpu_gb": 5.684,
+  "gpu": "NVIDIA GB10",
+  "outputs": [
+    "bruce-hunyuan-raw.glb",
+    "bruce-hunyuan-180cm.glb",
+    "bruce-hunyuan-180cm.blend"
+  ],
+  "raw_sha256": "5a1e1cc987f9c7ddc7e1e7c94344e725f022dac28c4d20488b80daf9e1d2fdc6"
+}

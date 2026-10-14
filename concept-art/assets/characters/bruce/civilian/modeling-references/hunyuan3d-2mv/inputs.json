@@ -1,0 +1,87 @@
+{
+  "character": "Bruce",
+  "variant": "civilian",
+  "model": "tencent/Hunyuan3D-2mv",
+  "source": "assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png",
+  "source_sha256": "dc805eb76047ddb538283bb535e99379ea1da880f1c1bb09f50a35a352ba9d58",
+  "pose": {
+    "name": "A-pose",
+    "arm_angle_from_torso_degrees": 45,
+    "elbow_flexion_degrees": 0,
+    "plane": "frontal",
+    "palms": "toward_thighs",
+    "reference": "Pose ortográfica para arte conceptual y referencias de modelado. Conservar todas las longitudes; cambiar únicamente la orientación de ambos brazos."
+  },
+  "target_height_meters": 1.8,
+  "preprocessing": "Separación de vistas, máscara alfa del SVG aprobado y encuadre a escala común; sin redibujar el personaje.",
+  "views": [
+    {
+      "view": "front",
+      "file": "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/front.png",
+      "source_bounds": [
+        62,
+        8,
+        578,
+        758
+      ],
+      "image_dimensions": [
+        1024,
+        1024
+      ],
+      "body_height_px": 900,
+      "floor_px": 962,
+      "sha256": "73d1f58e4699f8a7bcaa5d58bc7a5a0b8e59b34481ef083f6fa7cacd04ce9c43"
+    },
+    {
+      "view": "left",
+      "file": "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/left.png",
+      "source_bounds": [
+        739,
+        8,
+        908,
+        754
+      ],
+      "image_dimensions": [
+        1024,
+        1024
+      ],
+      "body_height_px": 900,
+      "floor_px": 962,
+      "sha256": "30f0fb9507161828927276f187a39b1529392d6ea95863b8f3dd829d6eac693f"
+    },
+    {
+      "view": "right",
+      "file": "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/right.png",
+      "source_bounds": [
+        1140,
+        8,
+        1310,
+        754
+      ],
+      "image_dimensions": [
+        1024,
+        1024
+      ],
+      "body_height_px": 900,
+      "floor_px": 962,
+      "sha256": "5148a202044107e4cdf1f892e9dea003645489621a8a648b1fb95a148db20e23"
+    },
+    {
+      "view": "back",
+      "file": "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/back.png",
+      "source_bounds": [
+        1469,
+        11,
+        1985,
+        758
+      ],
+      "image_dimensions": [
+        1024,
+        1024
+      ],
+      "body_height_px": 900,
+      "floor_px": 962,
+      "sha256": "6ddd4cf17780884d5155302af1a7153e4eac7d699d75f958da0fd7d3148040c9"
+    }
+  ]
+}

@@ -1,83 +1,65 @@
 {
   "project": "web-arachnid",
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "source": "../ideas.md",
   "tool": "image_gen integrada",
   "assets": [
     {
-      "file": "assets/characters/bruce/homemade-suit/suit-homemade.png",
+      "file": "assets/characters/bruce/homemade-suit/suit-homemade-a-pose-concept.png",
       "references": [
-        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
-        "assets/archive/equipment/gloves.png",
-        "assets/archive/suits/first-suit.png"
+        "assets/characters/bruce/homemade-suit/modeling-references/suit-homemade-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-homemade.prompt.txt",
-      "transparent": false,
-      "title": "Traje casero",
+      "prompt": "prompts/suit-homemade-a-pose.prompt.txt",
+      "transparent": true,
+      "title": "Traje casero · Pose A 45°",
       "category": "trajes",
-      "description": "Ropa remendada, azul y una bufanda naranja. El primer traje de Bruce.",
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
       "id": "suit-homemade",
       "status": "vigente",
-      "consistencyPrompt": "prompts/consistency/suit-homemade.prompt.txt",
-      "consistencyReferences": [
-        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/archive/modeling-references/bruce-modeling-v2.png",
-        "assets/archive/suits/suit-homemade-before-meshy.png",
-        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
-      ],
       "characterHeightMeters": 1.8,
-      "heightRepairPrompt": "prompts/consistency/suit-homemade.height.prompt.txt",
       "character": "bruce",
-      "variant": "homemade-suit"
+      "variant": "homemade-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
-      "file": "assets/characters/bruce/standard-suit/suit-standard.png",
+      "file": "assets/characters/bruce/standard-suit/suit-standard-a-pose-concept.png",
       "references": [
-        "assets/archive/suits/first-suit.png",
-        "assets/archive/equipment/gloves.png"
+        "assets/characters/bruce/standard-suit/modeling-references/suit-standard-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-standard.prompt.txt",
-      "transparent": false,
-      "repairPrompt": "prompts/suit-standard.repair.prompt.txt",
-      "title": "Traje normal",
+      "prompt": "prompts/suit-standard-a-pose.prompt.txt",
+      "transparent": true,
+      "title": "Traje normal · Pose A 45°",
       "category": "trajes",
-      "description": "El traje tecnológico formado por nanobots, con guantes independientes.",
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
       "id": "suit-standard",
       "status": "vigente",
-      "consistencyPrompt": "prompts/consistency/suit-standard.prompt.txt",
-      "consistencyReferences": [
-        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/archive/modeling-references/bruce-modeling-v2.png",
-        "assets/archive/suits/suit-standard-before-meshy.png",
-        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
-      ],
       "characterHeightMeters": 1.8,
       "character": "bruce",
-      "variant": "standard-suit"
+      "variant": "standard-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
-      "file": "assets/characters/bruce/alien-suit/suit-alien.png",
+      "file": "assets/characters/bruce/alien-suit/suit-alien-a-pose-concept.png",
       "references": [
-        "assets/archive/suits/first-suit.png",
-        "assets/archive/equipment/gloves.png"
+        "assets/characters/bruce/alien-suit/modeling-references/suit-alien-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-alien.prompt.txt",
-      "transparent": false,
-      "title": "Skin alienígena",
+      "prompt": "prompts/suit-alien-a-pose.prompt.txt",
+      "transparent": true,
+      "title": "Skin alienígena · Pose A 45°",
       "category": "trajes",
-      "description": "La silueta de web-arachnid adaptada a una apariencia alienígena.",
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
       "id": "suit-alien",
       "status": "vigente",
-      "consistencyPrompt": "prompts/consistency/suit-alien.prompt.txt",
-      "consistencyReferences": [
-        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/archive/modeling-references/bruce-modeling-v2.png",
-        "assets/archive/suits/suit-alien-before-meshy.png",
-        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
-      ],
       "characterHeightMeters": 1.8,
       "character": "bruce",
-      "variant": "alien-suit"
+      "variant": "alien-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "file": "assets/equipment/gloves-v2.png",
@@ -621,38 +603,41 @@
     {
       "id": "bruce-scale-180cm",
       "file": "assets/characters/bruce/civilian/bruce-scale-180cm.svg",
-      "title": "Bruce · Altura y articulaciones",
+      "title": "Bruce · Escala y proporciones · Pose A 45°",
       "category": "modeling",
       "status": "vigente",
-      "description": "Cuatro vistas revisadas a una altura total de 1,80 m. Las líneas cian permiten comparar las alturas objetivo de hombros, codos, caderas, muñecas, dedos y rodillas.",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "references": [
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-left-v3.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-right-v3.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-back-v3.png"
+        "assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png"
       ],
       "generator": "scripts/build_scale_reference.py",
       "character": "bruce",
-      "variant": "civilian"
+      "variant": "civilian",
+      "sourceAssetId": "bruce-a-pose-turnaround",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "id": "bruce-proportions-180cm",
       "file": "assets/characters/bruce/body-reference/bruce-proportions-180cm.svg",
-      "title": "Bruce · Medidas maestras del cuerpo",
+      "title": "Bruce · Medidas maestras · Pose A 45°",
       "category": "modeling",
       "status": "vigente",
-      "description": "Maniquí de construcción y medidas objetivo para un Bruce de 1,80 m: cabeza, torso, brazos, manos, piernas, articulaciones y anchos. Incluye su referencia de identidad visual.",
+      "description": "Maniquí vectorial con longitudes maestras y brazos a 45°; cotas diagonales de 32, 26 y 18 cm.",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "references": [
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png"
+        "assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
       "generator": "scripts/build_character_spec.py",
       "prompt": "prompts/bruce-master-proportions.prompt.txt",
       "character": "bruce",
-      "variant": "body-reference"
+      "variant": "body-reference",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "id": "main-menu",
@@ -664,61 +649,70 @@
       "transparent": false,
       "references": [
         "assets/environments/aster-city-three-layers.png",
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "assets/equipment/gloves-v2.png"
       ],
       "prompt": "prompts/main-menu.prompt.txt"
     },
     {
       "id": "suit-neon",
-      "file": "assets/characters/bruce/neon-suit/suit-neon-v4.png",
-      "title": "Traje neón",
+      "file": "assets/characters/bruce/neon-suit/suit-neon-a-pose-concept.png",
+      "title": "Traje neón · Pose A 45°",
       "category": "trajes",
       "status": "vigente",
-      "description": "Traje neón azul oscuro con pecho limpio, luces cian y magenta en hombros, brazos, costados y piernas, y los guantes originales de Bruce.",
-      "transparent": false,
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
+      "transparent": true,
       "references": [
-        "assets/archive/suits/suit-neon-v3.png"
+        "assets/characters/bruce/neon-suit/modeling-references/suit-neon-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-neon-v4.prompt.txt",
+      "prompt": "prompts/suit-neon-a-pose.prompt.txt",
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "character": "bruce",
-      "variant": "neon-suit"
+      "variant": "neon-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "id": "suit-rocker",
-      "file": "assets/characters/bruce/rocker-suit/suit-rocker-v2.png",
-      "title": "Traje roquero",
+      "file": "assets/characters/bruce/rocker-suit/suit-rocker-a-pose-concept.png",
+      "title": "Traje roquero · Pose A 45°",
       "category": "trajes",
       "status": "vigente",
-      "description": "Traje roquero con chaqueta de cuero, tachuelas, bufanda y pelo castaño puntiagudo que sobresale de la máscara.",
-      "transparent": false,
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
+      "transparent": true,
       "references": [
-        "assets/archive/suits/suit-rocker-v1.png"
+        "assets/characters/bruce/rocker-suit/modeling-references/suit-rocker-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-rocker-v2.prompt.txt",
+      "prompt": "prompts/suit-rocker-a-pose.prompt.txt",
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "character": "bruce",
-      "variant": "rocker-suit"
+      "variant": "rocker-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "id": "suit-comic",
-      "file": "assets/characters/bruce/comic-suit/suit-comic-v3.png",
-      "title": "Traje estilo cómic",
+      "file": "assets/characters/bruce/comic-suit/suit-comic-a-pose-concept.png",
+      "title": "Traje estilo cómic · Pose A 45°",
       "category": "trajes",
       "status": "vigente",
-      "description": "Traje normal en azul con estética de cómic muy marcada: tinta gruesa, sombras negras planas y tramas de puntos visibles.",
-      "transparent": false,
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
+      "transparent": true,
       "references": [
-        "assets/archive/suits/suit-comic-v2.png"
+        "assets/characters/bruce/comic-suit/modeling-references/suit-comic-a-pose-turnaround.png",
+        "bruce-proportions.json"
       ],
-      "prompt": "prompts/suit-comic-v3.prompt.txt",
+      "prompt": "prompts/suit-comic-a-pose.prompt.txt",
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "character": "bruce",
-      "variant": "comic-suit"
+      "variant": "comic-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
     },
     {
       "id": "suit-comic-v1",
@@ -730,7 +724,7 @@
       "transparent": false,
       "references": [
         "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "assets/equipment/gloves-v2.png"
       ],
       "prompt": "prompts/suit-comic.prompt.txt",
@@ -747,7 +741,7 @@
       "transparent": false,
       "references": [
         "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "assets/equipment/gloves-v2.png"
       ],
       "prompt": "prompts/suit-rocker.prompt.txt",
@@ -763,7 +757,7 @@
       "description": "Diseño del traje normal en azul y oscuro, con contornos de tinta, colores planos y tramas de puntos. Conserva máscara, paneles y guantes.",
       "transparent": false,
       "references": [
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "assets/archive/suits/suit-comic-v1.png",
         "assets/equipment/gloves-v2.png"
       ],
@@ -781,7 +775,7 @@
       "transparent": false,
       "references": [
         "assets/archive/modeling-references/bruce-modeling-front-v2.png",
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "assets/equipment/gloves-v2.png"
       ],
       "prompt": "prompts/suit-neon.prompt.txt",
@@ -820,17 +814,17 @@
     },
     {
       "id": "bruce-modeling-left-v3",
-      "file": "assets/characters/bruce/civilian/modeling-references/bruce-left-v3.png",
-      "title": "Bruce · Perfil izquierdo",
+      "file": "assets/archive/characters/bruce/civilian/modeling-references/bruce-left-v3.png",
+      "title": "Bruce · Perfil izquierdo · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
       "references": [
         "assets/archive/modeling-references/bruce-modeling-v2.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
         "previews/bruce-dimensions-reference.jpg"
       ],
       "prompt": "prompts/bruce-modeling-left-v3.prompt.txt",
@@ -846,10 +840,10 @@
     },
     {
       "id": "bruce-modeling-front-v3",
-      "file": "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
-      "title": "Bruce · Frente",
+      "file": "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+      "title": "Bruce · Frente · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
@@ -871,17 +865,17 @@
     },
     {
       "id": "bruce-modeling-back-v3",
-      "file": "assets/characters/bruce/civilian/modeling-references/bruce-back-v3.png",
-      "title": "Bruce · Espalda",
+      "file": "assets/archive/characters/bruce/civilian/modeling-references/bruce-back-v3.png",
+      "title": "Bruce · Espalda · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
       "references": [
         "assets/archive/modeling-references/bruce-modeling-back-v2.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
         "previews/bruce-dimensions-reference.jpg"
       ],
       "prompt": "prompts/bruce-modeling-back-v3.prompt.txt",
@@ -898,17 +892,17 @@
     },
     {
       "id": "bruce-modeling-right-v3",
-      "file": "assets/characters/bruce/civilian/modeling-references/bruce-right-v3.png",
-      "title": "Bruce · Perfil derecho",
+      "file": "assets/archive/characters/bruce/civilian/modeling-references/bruce-right-v3.png",
+      "title": "Bruce · Perfil derecho · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Vista revisada con brazos más largos, rodillas más bajas y alturas de articulaciones contrastadas con la ficha de 1,80 m. Referencia ilustrada de construcción.",
       "references": [
         "assets/archive/modeling-references/bruce-modeling-right-v2.png",
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
         "previews/bruce-dimensions-reference.jpg"
       ],
       "prompt": "prompts/bruce-modeling-right-v3.prompt.txt",
@@ -954,16 +948,676 @@
     },
     {
       "id": "suit-homemade-turnaround",
-      "file": "assets/characters/bruce/homemade-suit/modeling-references/suit-homemade-turnaround.png",
-      "title": "Traje casero · Cuatro vistas",
+      "file": "assets/characters/bruce/homemade-suit/modeling-references/suit-homemade-a-pose-turnaround.png",
+      "title": "Traje casero · Pose A 45°",
       "category": "modeling",
       "status": "vigente",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/homemade-suit/modeling-references/suit-homemade-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-homemade-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          65,
+          11,
+          581,
+          782
+        ],
+        [
+          683,
+          11,
+          870,
+          782
+        ],
+        [
+          1114,
+          11,
+          1300,
+          782
+        ],
+        [
+          1400,
+          11,
+          1916,
+          782
+        ]
+      ],
+      "character": "bruce",
+      "variant": "homemade-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-homemade-scale-180cm",
+      "file": "assets/characters/bruce/homemade-suit/suit-homemade-scale-180cm.svg",
+      "title": "Traje casero · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/homemade-suit/modeling-references/suit-homemade-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-homemade-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "homemade-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-standard-turnaround",
+      "file": "assets/characters/bruce/standard-suit/modeling-references/suit-standard-a-pose-turnaround.png",
+      "title": "Traje normal · Pose A 45°",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/standard-suit/modeling-references/suit-standard-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-standard-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          86,
+          19,
+          641,
+          738
+        ],
+        [
+          784,
+          21,
+          936,
+          739
+        ],
+        [
+          1109,
+          21,
+          1261,
+          739
+        ],
+        [
+          1404,
+          19,
+          1959,
+          737
+        ]
+      ],
+      "character": "bruce",
+      "variant": "standard-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-standard-scale-180cm",
+      "file": "assets/characters/bruce/standard-suit/suit-standard-scale-180cm.svg",
+      "title": "Traje normal · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/standard-suit/modeling-references/suit-standard-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-standard-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "standard-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-alien-turnaround",
+      "file": "assets/characters/bruce/alien-suit/modeling-references/suit-alien-a-pose-turnaround.png",
+      "title": "Traje alienígena · Pose A 45°",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/alien-suit/modeling-references/suit-alien-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-alien-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          27,
+          11,
+          596,
+          752
+        ],
+        [
+          709,
+          11,
+          889,
+          752
+        ],
+        [
+          1157,
+          11,
+          1338,
+          752
+        ],
+        [
+          1452,
+          11,
+          2021,
+          752
+        ]
+      ],
+      "character": "bruce",
+      "variant": "alien-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-alien-scale-180cm",
+      "file": "assets/characters/bruce/alien-suit/suit-alien-scale-180cm.svg",
+      "title": "Traje alienígena · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/alien-suit/modeling-references/suit-alien-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-alien-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "alien-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-neon-turnaround",
+      "file": "assets/characters/bruce/neon-suit/modeling-references/suit-neon-a-pose-turnaround.png",
+      "title": "Traje neón · Pose A 45°",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/neon-suit/modeling-references/suit-neon-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-neon-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          69,
+          11,
+          616,
+          751
+        ],
+        [
+          789,
+          11,
+          945,
+          751
+        ],
+        [
+          1104,
+          11,
+          1260,
+          751
+        ],
+        [
+          1433,
+          11,
+          1979,
+          751
+        ]
+      ],
+      "character": "bruce",
+      "variant": "neon-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-neon-scale-180cm",
+      "file": "assets/characters/bruce/neon-suit/suit-neon-scale-180cm.svg",
+      "title": "Traje neón · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/neon-suit/modeling-references/suit-neon-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-neon-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "neon-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-rocker-turnaround",
+      "file": "assets/characters/bruce/rocker-suit/modeling-references/suit-rocker-a-pose-turnaround.png",
+      "title": "Traje roquero · Pose A 45°",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/rocker-suit/modeling-references/suit-rocker-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-rocker-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          64,
+          14,
+          603,
+          754
+        ],
+        [
+          746,
+          14,
+          891,
+          756
+        ],
+        [
+          1157,
+          14,
+          1303,
+          756
+        ],
+        [
+          1447,
+          12,
+          1984,
+          753
+        ]
+      ],
+      "character": "bruce",
+      "variant": "rocker-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-rocker-scale-180cm",
+      "file": "assets/characters/bruce/rocker-suit/suit-rocker-scale-180cm.svg",
+      "title": "Traje roquero · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/rocker-suit/modeling-references/suit-rocker-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-rocker-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "rocker-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-comic-turnaround",
+      "file": "assets/characters/bruce/comic-suit/modeling-references/suit-comic-a-pose-turnaround.png",
+      "title": "Traje cómic · Pose A 45°",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "references": [
+        "assets/archive/characters/bruce/comic-suit/modeling-references/suit-comic-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "prompt": "prompts/suit-comic-a-pose.prompt.txt",
+      "viewBounds": [
+        [
+          34,
+          14,
+          641,
+          748
+        ],
+        [
+          777,
+          14,
+          936,
+          748
+        ],
+        [
+          1110,
+          14,
+          1270,
+          748
+        ],
+        [
+          1406,
+          14,
+          2013,
+          748
+        ]
+      ],
+      "character": "bruce",
+      "variant": "comic-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "suit-comic-scale-180cm",
+      "file": "assets/characters/bruce/comic-suit/suit-comic-scale-180cm.svg",
+      "title": "Traje cómic · Escala y proporciones",
+      "category": "trajes",
+      "status": "vigente",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "references": [
+        "assets/characters/bruce/comic-suit/modeling-references/suit-comic-a-pose-turnaround.png"
+      ],
+      "sourceAssetId": "suit-comic-turnaround",
+      "generator": "scripts/build_suit_scale_references.py",
+      "character": "bruce",
+      "variant": "comic-suit",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "bruce-without-gloves-v2",
+      "file": "assets/characters/bruce/civilian/bruce-without-gloves-a-pose-concept.png",
+      "title": "Bruce sin guantes · Pose A 45°",
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
+      "category": "personajes",
+      "status": "vigente",
+      "transparent": true,
+      "prompt": "prompts/bruce-without-gloves-a-pose.prompt.txt",
+      "references": [
+        "assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "characterHeightMeters": 1.8,
+      "character": "bruce",
+      "variant": "civilian",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "bruce-with-gloves-v3",
+      "file": "assets/characters/bruce/civilian-with-gloves/bruce-with-gloves-a-pose-concept.png",
+      "title": "Bruce con guantes · Pose A 45°",
+      "description": "Arte conceptual de control: frente, perfiles y espalda con brazos a 45° y las proporciones maestras de Bruce.",
+      "category": "personajes",
+      "status": "vigente",
+      "transparent": true,
+      "prompt": "prompts/bruce-with-gloves-a-pose.prompt.txt",
+      "references": [
+        "assets/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-a-pose-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "characterHeightMeters": 1.8,
+      "character": "bruce",
+      "variant": "civilian-with-gloves",
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "bruce-with-gloves-turnaround",
+      "file": "assets/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-a-pose-turnaround.png",
+      "title": "Bruce con guantes · Pose A 45°",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": true,
+      "prompt": "prompts/bruce-with-gloves-a-pose.prompt.txt",
+      "references": [
+        "assets/archive/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-turnaround.png",
+        "bruce-proportions.json"
+      ],
+      "character": "bruce",
+      "variant": "civilian-with-gloves",
+      "characterHeightMeters": 1.8,
+      "viewBounds": [
+        [
+          63,
+          11,
+          607,
+          760
+        ],
+        [
+          715,
+          11,
+          879,
+          761
+        ],
+        [
+          1169,
+          10,
+          1333,
+          761
+        ],
+        [
+          1442,
+          8,
+          1987,
+          761
+        ]
+      ],
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "bruce-with-gloves-scale-180cm",
+      "file": "assets/characters/bruce/civilian-with-gloves/bruce-with-gloves-scale-180cm.svg",
+      "title": "Bruce con guantes · Escala y proporciones",
+      "description": "Lámina de medidas en pose A: altura total 180 cm, brazos a 45° y cotas calculadas desde las longitudes maestras.",
+      "category": "personajes",
+      "status": "vigente",
+      "transparent": false,
+      "generator": "scripts/build_scale_reference.py",
+      "sourceAssetId": "bruce-with-gloves-turnaround",
+      "references": [
+        "assets/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-a-pose-turnaround.png"
+      ],
+      "character": "bruce",
+      "variant": "civilian-with-gloves",
+      "characterHeightMeters": 1.8,
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "file": "assets/archive/characters/bruce/homemade-suit/suit-homemade.png",
+      "references": [
+        "assets/archive/characters/bruce-without-gloves-before-meshy.png",
+        "assets/archive/equipment/gloves.png",
+        "assets/archive/suits/first-suit.png"
+      ],
+      "prompt": "prompts/suit-homemade.prompt.txt",
+      "transparent": false,
+      "title": "Traje casero · Antes de pose A",
+      "category": "trajes",
+      "description": "Ropa remendada, azul y una bufanda naranja. El primer traje de Bruce.",
+      "id": "suit-homemade-before-a-pose",
+      "status": "archivo",
+      "consistencyPrompt": "prompts/consistency/suit-homemade.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
+        "assets/archive/modeling-references/bruce-modeling-v2.png",
+        "assets/archive/suits/suit-homemade-before-meshy.png",
+        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
+      ],
+      "characterHeightMeters": 1.8,
+      "heightRepairPrompt": "prompts/consistency/suit-homemade.height.prompt.txt",
+      "character": "bruce",
+      "variant": "homemade-suit"
+    },
+    {
+      "file": "assets/archive/characters/bruce/standard-suit/suit-standard.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-standard.prompt.txt",
+      "transparent": false,
+      "repairPrompt": "prompts/suit-standard.repair.prompt.txt",
+      "title": "Traje normal · Antes de pose A",
+      "category": "trajes",
+      "description": "El traje tecnológico formado por nanobots, con guantes independientes.",
+      "id": "suit-standard-before-a-pose",
+      "status": "archivo",
+      "consistencyPrompt": "prompts/consistency/suit-standard.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
+        "assets/archive/modeling-references/bruce-modeling-v2.png",
+        "assets/archive/suits/suit-standard-before-meshy.png",
+        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
+      ],
+      "characterHeightMeters": 1.8,
+      "character": "bruce",
+      "variant": "standard-suit"
+    },
+    {
+      "file": "assets/archive/characters/bruce/alien-suit/suit-alien.png",
+      "references": [
+        "assets/archive/suits/first-suit.png",
+        "assets/archive/equipment/gloves.png"
+      ],
+      "prompt": "prompts/suit-alien.prompt.txt",
+      "transparent": false,
+      "title": "Skin alienígena · Antes de pose A",
+      "category": "trajes",
+      "description": "La silueta de web-arachnid adaptada a una apariencia alienígena.",
+      "id": "suit-alien-before-a-pose",
+      "status": "archivo",
+      "consistencyPrompt": "prompts/consistency/suit-alien.prompt.txt",
+      "consistencyReferences": [
+        "assets/archive/modeling-references/bruce-modeling-front-v2.png",
+        "assets/archive/modeling-references/bruce-modeling-v2.png",
+        "assets/archive/suits/suit-alien-before-meshy.png",
+        "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
+      ],
+      "characterHeightMeters": 1.8,
+      "character": "bruce",
+      "variant": "alien-suit"
+    },
+    {
+      "id": "bruce-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/civilian/bruce-scale-180cm.svg",
+      "title": "Bruce · Altura y articulaciones · Antes de pose A",
+      "category": "modeling",
+      "status": "archivo",
+      "description": "Cuatro vistas revisadas a una altura total de 1,80 m. Las líneas cian permiten comparar las alturas objetivo de hombros, codos, caderas, muñecas, dedos y rodillas.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-left-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-right-v3.png",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-back-v3.png"
+      ],
+      "generator": "scripts/build_scale_reference.py",
+      "character": "bruce",
+      "variant": "civilian"
+    },
+    {
+      "id": "bruce-proportions-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/body-reference/bruce-proportions-180cm.svg",
+      "title": "Bruce · Medidas maestras del cuerpo · Antes de pose A",
+      "category": "modeling",
+      "status": "archivo",
+      "description": "Maniquí de construcción y medidas objetivo para un Bruce de 1,80 m: cabeza, torso, brazos, manos, piernas, articulaciones y anchos. Incluye su referencia de identidad visual.",
+      "transparent": false,
+      "characterHeightMeters": 1.8,
+      "references": [
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png"
+      ],
+      "generator": "scripts/build_character_spec.py",
+      "prompt": "prompts/bruce-master-proportions.prompt.txt",
+      "character": "bruce",
+      "variant": "body-reference"
+    },
+    {
+      "id": "suit-neon-before-a-pose",
+      "file": "assets/archive/characters/bruce/neon-suit/suit-neon-v4.png",
+      "title": "Traje neón · Antes de pose A",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Traje neón azul oscuro con pecho limpio, luces cian y magenta en hombros, brazos, costados y piernas, y los guantes originales de Bruce.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-neon-v3.png"
+      ],
+      "prompt": "prompts/suit-neon-v4.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "character": "bruce",
+      "variant": "neon-suit"
+    },
+    {
+      "id": "suit-rocker-before-a-pose",
+      "file": "assets/archive/characters/bruce/rocker-suit/suit-rocker-v2.png",
+      "title": "Traje roquero · Antes de pose A",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Traje roquero con chaqueta de cuero, tachuelas, bufanda y pelo castaño puntiagudo que sobresale de la máscara.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-rocker-v1.png"
+      ],
+      "prompt": "prompts/suit-rocker-v2.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "character": "bruce",
+      "variant": "rocker-suit"
+    },
+    {
+      "id": "suit-comic-before-a-pose",
+      "file": "assets/archive/characters/bruce/comic-suit/suit-comic-v3.png",
+      "title": "Traje estilo cómic · Antes de pose A",
+      "category": "trajes",
+      "status": "archivo",
+      "description": "Traje normal en azul con estética de cómic muy marcada: tinta gruesa, sombras negras planas y tramas de puntos visibles.",
+      "transparent": false,
+      "references": [
+        "assets/archive/suits/suit-comic-v2.png"
+      ],
+      "prompt": "prompts/suit-comic-v3.prompt.txt",
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
+      "character": "bruce",
+      "variant": "comic-suit"
+    },
+    {
+      "id": "suit-homemade-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/homemade-suit/modeling-references/suit-homemade-turnaround.png",
+      "title": "Traje casero · Cuatro vistas · Antes de pose A",
+      "category": "modeling",
+      "status": "archivo",
+      "transparent": true,
+      "characterHeightMeters": 1.8,
+      "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/homemade-suit/suit-homemade.png",
+        "assets/archive/characters/bruce/homemade-suit/suit-homemade.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-homemade-turnaround.prompt.txt",
@@ -998,17 +1652,17 @@
       "variant": "homemade-suit"
     },
     {
-      "id": "suit-homemade-scale-180cm",
-      "file": "assets/characters/bruce/homemade-suit/suit-homemade-scale-180cm.svg",
-      "title": "Traje casero · Escala y proporciones",
+      "id": "suit-homemade-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/homemade-suit/suit-homemade-scale-180cm.svg",
+      "title": "Traje casero · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/homemade-suit/modeling-references/suit-homemade-turnaround.png"
+        "assets/archive/characters/bruce/homemade-suit/modeling-references/suit-homemade-turnaround.png"
       ],
       "sourceAssetId": "suit-homemade-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1016,17 +1670,17 @@
       "variant": "homemade-suit"
     },
     {
-      "id": "suit-standard-turnaround",
-      "file": "assets/characters/bruce/standard-suit/modeling-references/suit-standard-turnaround.png",
-      "title": "Traje normal · Cuatro vistas",
+      "id": "suit-standard-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/standard-suit/modeling-references/suit-standard-turnaround.png",
+      "title": "Traje normal · Cuatro vistas · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/standard-suit/suit-standard.png",
+        "assets/archive/characters/bruce/standard-suit/suit-standard.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-standard-turnaround.prompt.txt",
@@ -1061,17 +1715,17 @@
       "variant": "standard-suit"
     },
     {
-      "id": "suit-standard-scale-180cm",
-      "file": "assets/characters/bruce/standard-suit/suit-standard-scale-180cm.svg",
-      "title": "Traje normal · Escala y proporciones",
+      "id": "suit-standard-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/standard-suit/suit-standard-scale-180cm.svg",
+      "title": "Traje normal · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/standard-suit/modeling-references/suit-standard-turnaround.png"
+        "assets/archive/characters/bruce/standard-suit/modeling-references/suit-standard-turnaround.png"
       ],
       "sourceAssetId": "suit-standard-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1079,17 +1733,17 @@
       "variant": "standard-suit"
     },
     {
-      "id": "suit-alien-turnaround",
-      "file": "assets/characters/bruce/alien-suit/modeling-references/suit-alien-turnaround.png",
-      "title": "Traje alienígena · Cuatro vistas",
+      "id": "suit-alien-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/alien-suit/modeling-references/suit-alien-turnaround.png",
+      "title": "Traje alienígena · Cuatro vistas · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/alien-suit/suit-alien.png",
+        "assets/archive/characters/bruce/alien-suit/suit-alien.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-alien-turnaround.prompt.txt",
@@ -1124,17 +1778,17 @@
       "variant": "alien-suit"
     },
     {
-      "id": "suit-alien-scale-180cm",
-      "file": "assets/characters/bruce/alien-suit/suit-alien-scale-180cm.svg",
-      "title": "Traje alienígena · Escala y proporciones",
+      "id": "suit-alien-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/alien-suit/suit-alien-scale-180cm.svg",
+      "title": "Traje alienígena · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/alien-suit/modeling-references/suit-alien-turnaround.png"
+        "assets/archive/characters/bruce/alien-suit/modeling-references/suit-alien-turnaround.png"
       ],
       "sourceAssetId": "suit-alien-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1142,17 +1796,17 @@
       "variant": "alien-suit"
     },
     {
-      "id": "suit-neon-turnaround",
-      "file": "assets/characters/bruce/neon-suit/modeling-references/suit-neon-turnaround.png",
-      "title": "Traje neón · Cuatro vistas",
+      "id": "suit-neon-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/neon-suit/modeling-references/suit-neon-turnaround.png",
+      "title": "Traje neón · Cuatro vistas · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/neon-suit/suit-neon-v4.png",
+        "assets/archive/characters/bruce/neon-suit/suit-neon-v4.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-neon-turnaround.prompt.txt",
@@ -1187,17 +1841,17 @@
       "variant": "neon-suit"
     },
     {
-      "id": "suit-neon-scale-180cm",
-      "file": "assets/characters/bruce/neon-suit/suit-neon-scale-180cm.svg",
-      "title": "Traje neón · Escala y proporciones",
+      "id": "suit-neon-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/neon-suit/suit-neon-scale-180cm.svg",
+      "title": "Traje neón · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/neon-suit/modeling-references/suit-neon-turnaround.png"
+        "assets/archive/characters/bruce/neon-suit/modeling-references/suit-neon-turnaround.png"
       ],
       "sourceAssetId": "suit-neon-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1205,17 +1859,17 @@
       "variant": "neon-suit"
     },
     {
-      "id": "suit-rocker-turnaround",
-      "file": "assets/characters/bruce/rocker-suit/modeling-references/suit-rocker-turnaround.png",
-      "title": "Traje roquero · Cuatro vistas",
+      "id": "suit-rocker-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/rocker-suit/modeling-references/suit-rocker-turnaround.png",
+      "title": "Traje roquero · Cuatro vistas · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/rocker-suit/suit-rocker-v2.png",
+        "assets/archive/characters/bruce/rocker-suit/suit-rocker-v2.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-rocker-turnaround.prompt.txt",
@@ -1250,17 +1904,17 @@
       "variant": "rocker-suit"
     },
     {
-      "id": "suit-rocker-scale-180cm",
-      "file": "assets/characters/bruce/rocker-suit/suit-rocker-scale-180cm.svg",
-      "title": "Traje roquero · Escala y proporciones",
+      "id": "suit-rocker-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/rocker-suit/suit-rocker-scale-180cm.svg",
+      "title": "Traje roquero · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/rocker-suit/modeling-references/suit-rocker-turnaround.png"
+        "assets/archive/characters/bruce/rocker-suit/modeling-references/suit-rocker-turnaround.png"
       ],
       "sourceAssetId": "suit-rocker-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1268,17 +1922,17 @@
       "variant": "rocker-suit"
     },
     {
-      "id": "suit-comic-turnaround",
-      "file": "assets/characters/bruce/comic-suit/modeling-references/suit-comic-turnaround.png",
-      "title": "Traje cómic · Cuatro vistas",
+      "id": "suit-comic-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/comic-suit/modeling-references/suit-comic-turnaround.png",
+      "title": "Traje cómic · Cuatro vistas · Antes de pose A",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Cuatro vistas de control del traje: frente, ambos perfiles y espalda. Base ilustrada de la lámina de escala.",
       "references": [
-        "assets/characters/bruce/comic-suit/suit-comic-v3.png",
+        "assets/archive/characters/bruce/comic-suit/suit-comic-v3.png",
         "previews/bruce-revised-proportions.jpg"
       ],
       "prompt": "prompts/suit-comic-turnaround.prompt.txt",
@@ -1313,17 +1967,17 @@
       "variant": "comic-suit"
     },
     {
-      "id": "suit-comic-scale-180cm",
-      "file": "assets/characters/bruce/comic-suit/suit-comic-scale-180cm.svg",
-      "title": "Traje cómic · Escala y proporciones",
+      "id": "suit-comic-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/comic-suit/suit-comic-scale-180cm.svg",
+      "title": "Traje cómic · Escala y proporciones · Antes de pose A",
       "category": "trajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "characterHeightMeters": 1.8,
       "characterSpecification": "bruce-proportions.json",
       "description": "Lámina de medidas del traje a 1,80 m, con frente, ambos perfiles y espalda, suelo compartido y alturas objetivo de articulaciones en cian.",
       "references": [
-        "assets/characters/bruce/comic-suit/modeling-references/suit-comic-turnaround.png"
+        "assets/archive/characters/bruce/comic-suit/modeling-references/suit-comic-turnaround.png"
       ],
       "sourceAssetId": "suit-comic-turnaround",
       "generator": "scripts/build_suit_scale_references.py",
@@ -1331,17 +1985,17 @@
       "variant": "comic-suit"
     },
     {
-      "id": "bruce-without-gloves-v2",
-      "file": "assets/characters/bruce/civilian/bruce-without-gloves-v2.png",
-      "title": "Bruce sin guantes",
+      "id": "bruce-without-gloves-v2-before-a-pose",
+      "file": "assets/archive/characters/bruce/civilian/bruce-without-gloves-v2.png",
+      "title": "Bruce sin guantes · Antes de pose A",
       "description": "Ropa cotidiana, inventor y caminar; identidad y proporciones revisadas con las vistas v3.",
       "category": "personajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "prompt": "prompts/bruce-without-gloves-v2.prompt.txt",
       "references": [
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
-        "assets/characters/bruce/civilian/bruce-scale-180cm.svg",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/bruce-scale-180cm.svg",
         "bruce-proportions.json",
         "assets/archive/characters/bruce-without-gloves-before-proportion-update.png"
       ],
@@ -1351,17 +2005,17 @@
       "repairPrompt": "prompts/bruce-without-gloves-v2.repair.prompt.txt"
     },
     {
-      "id": "bruce-with-gloves-v3",
-      "file": "assets/characters/bruce/civilian-with-gloves/bruce-with-gloves-v3.png",
-      "title": "Bruce con guantes",
+      "id": "bruce-with-gloves-v3-before-a-pose",
+      "file": "assets/archive/characters/bruce/civilian-with-gloves/bruce-with-gloves-v3.png",
+      "title": "Bruce con guantes · Antes de pose A",
       "description": "Ropa cotidiana, hilos de energía y escudo; proporciones revisadas y los mismos guantes independientes.",
       "category": "personajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "prompt": "prompts/bruce-with-gloves-v3.prompt.txt",
       "references": [
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
-        "assets/characters/bruce/civilian/bruce-scale-180cm.svg",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/bruce-scale-180cm.svg",
         "bruce-proportions.json",
         "assets/archive/characters/bruce-with-gloves-v2-before-proportion-update.png",
         "assets/equipment/gloves-v2.png"
@@ -1371,17 +2025,17 @@
       "variant": "civilian-with-gloves"
     },
     {
-      "id": "bruce-with-gloves-turnaround",
-      "file": "assets/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-turnaround.png",
-      "title": "Bruce con guantes · Referencias de modelado",
+      "id": "bruce-with-gloves-turnaround-before-a-pose",
+      "file": "assets/archive/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-turnaround.png",
+      "title": "Bruce con guantes · Referencias de modelado · Antes de pose A",
       "description": "Frente, ambos perfiles y espalda en reposo, sin rótulos, para crear el modelo 3D.",
       "category": "modeling",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": true,
       "prompt": "prompts/bruce-with-gloves-turnaround.prompt.txt",
       "references": [
-        "assets/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
-        "assets/characters/bruce/civilian/bruce-scale-180cm.svg",
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "assets/archive/characters/bruce/civilian/bruce-scale-180cm.svg",
         "bruce-proportions.json",
         "assets/equipment/gloves-v2.png"
       ],
@@ -1416,25 +2070,207 @@
       ]
     },
     {
-      "id": "bruce-with-gloves-scale-180cm",
-      "file": "assets/characters/bruce/civilian-with-gloves/bruce-with-gloves-scale-180cm.svg",
-      "title": "Bruce con guantes · Escala y proporciones",
+      "id": "bruce-with-gloves-scale-180cm-before-a-pose",
+      "file": "assets/archive/characters/bruce/civilian-with-gloves/bruce-with-gloves-scale-180cm.svg",
+      "title": "Bruce con guantes · Escala y proporciones · Antes de pose A",
       "description": "Lámina de medidas: cuatro vistas alineadas a 1,80 m y alturas objetivo de articulaciones.",
       "category": "personajes",
-      "status": "vigente",
+      "status": "archivo",
       "transparent": false,
       "generator": "scripts/build_scale_reference.py",
       "sourceAssetId": "bruce-with-gloves-turnaround",
       "references": [
-        "assets/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-turnaround.png"
+        "assets/archive/characters/bruce/civilian-with-gloves/modeling-references/bruce-with-gloves-turnaround.png"
       ],
       "character": "bruce",
       "variant": "civilian-with-gloves",
       "characterHeightMeters": 1.8
+    },
+    {
+      "id": "bruce-a-pose-turnaround",
+      "category": "modeling",
+      "status": "vigente",
+      "file": "assets/characters/bruce/civilian/modeling-references/bruce-without-gloves-a-pose-turnaround.png",
+      "title": "Bruce sin guantes · Pose A 45°",
+      "description": "Cuatro vistas ortográficas en pose A, brazos rectos a 45° del torso, para crear el modelo 3D.",
+      "transparent": true,
+      "prompt": "prompts/bruce-without-gloves-a-pose.prompt.txt",
+      "references": [
+        "assets/archive/characters/bruce/civilian/modeling-references/bruce-front-v3.png",
+        "bruce-proportions.json"
+      ],
+      "viewBounds": [
+        [
+          62,
+          8,
+          578,
+          758
+        ],
+        [
+          739,
+          8,
+          908,
+          754
+        ],
+        [
+          1140,
+          8,
+          1310,
+          754
+        ],
+        [
+          1469,
+          11,
+          1985,
+          758
+        ]
+      ],
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "pose": "A-pose",
+      "armAngleFromTorsoDegrees": 45
+    },
+    {
+      "id": "bruce-hunyuan-front-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-front-preview.png",
+      "title": "Bruce · Modelo Hunyuan · Frente",
+      "description": "Malla base generada en el Spark, ajustada a 1,80 m. Sin texturas ni rig; rostro y dedos requieren refinamiento.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/generation-request.json",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/model-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/finalize_hunyuan_bruce.py",
+      "modelStatus": "base-mesh"
+    },
+    {
+      "id": "bruce-hunyuan-three-quarter-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-three-quarter-preview.png",
+      "title": "Bruce · Modelo Hunyuan · Tres cuartos",
+      "description": "Malla base generada en el Spark, ajustada a 1,80 m. Sin texturas ni rig; rostro y dedos requieren refinamiento.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/generation-request.json",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/model-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/finalize_hunyuan_bruce.py",
+      "modelStatus": "base-mesh"
+    },
+    {
+      "id": "bruce-hunyuan-back-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-back-preview.png",
+      "title": "Bruce · Modelo Hunyuan · Espalda",
+      "description": "Malla base generada en el Spark, ajustada a 1,80 m. Sin texturas ni rig; rostro y dedos requieren refinamiento.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/generation-request.json",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/model-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/finalize_hunyuan_bruce.py",
+      "modelStatus": "base-mesh"
+    },
+    {
+      "id": "bruce-hunyuan-textured-front-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-front-preview.png",
+      "title": "Bruce · Textura proyectada · Frente",
+      "description": "Borrador con mapa de color 4K obtenido por proyección local del arte aprobado sobre la malla de Hunyuan. Altura 1,80 m; misma geometría, sin rig. Las uniones, manos y bolso requieren retoque. No generado con Hunyuan3D-Paint.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/textures/bruce-base-color.png",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/texture-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/texture_hunyuan_bruce.py",
+      "modelStatus": "texture-projection-draft",
+      "textureMethod": "local-four-view-projection"
+    },
+    {
+      "id": "bruce-hunyuan-textured-three-quarter-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-three-quarter-preview.png",
+      "title": "Bruce · Textura proyectada · Tres cuartos",
+      "description": "Borrador con mapa de color 4K obtenido por proyección local del arte aprobado sobre la malla de Hunyuan. Altura 1,80 m; misma geometría, sin rig. Las uniones, manos y bolso requieren retoque. No generado con Hunyuan3D-Paint.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/textures/bruce-base-color.png",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/texture-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/texture_hunyuan_bruce.py",
+      "modelStatus": "texture-projection-draft",
+      "textureMethod": "local-four-view-projection"
+    },
+    {
+      "id": "bruce-hunyuan-textured-back-preview",
+      "file": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-back-preview.png",
+      "title": "Bruce · Textura proyectada · Espalda",
+      "description": "Borrador con mapa de color 4K obtenido por proyección local del arte aprobado sobre la malla de Hunyuan. Altura 1,80 m; misma geometría, sin rig. Las uniones, manos y bolso requieren retoque. No generado con Hunyuan3D-Paint.",
+      "category": "modeling",
+      "status": "vigente",
+      "transparent": false,
+      "references": [
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/textures/bruce-base-color.png",
+        "assets/characters/bruce/civilian/models/hunyuan3d-2mv/texture-report.json"
+      ],
+      "modelFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.glb",
+      "blenderFile": "assets/characters/bruce/civilian/models/hunyuan3d-2mv/bruce-hunyuan-textured-180cm.blend",
+      "character": "bruce",
+      "variant": "civilian",
+      "characterHeightMeters": 1.8,
+      "generator": "scripts/texture_hunyuan_bruce.py",
+      "modelStatus": "texture-projection-draft",
+      "textureMethod": "local-four-view-projection"
     }
   ],
   "schemaVersion": 2,
   "gallery": "index.html",
   "characterHeightMeters": 1.8,
-  "characterSpecification": "bruce-proportions.json"
+  "characterSpecification": "bruce-proportions.json",
+  "modelingPose": "A-pose",
+  "armAngleFromTorsoDegrees": 45
 }

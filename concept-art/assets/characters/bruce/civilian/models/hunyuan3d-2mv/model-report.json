@@ -1,0 +1,40 @@
+{
+  "source": "bruce-hunyuan-raw.glb",
+  "normalized": "bruce-hunyuan-180cm.glb",
+  "blender_file": "bruce-hunyuan-180cm.blend",
+  "units": "meters",
+  "blender_up_axis": "Z",
+  "gltf_up_axis": "Y",
+  "height_meters": 1.7999999523162842,
+  "uniform_scale_factor": 0.9025348330338332,
+  "original_bounds_blender": [
+    [
+      -0.7304965257644653,
+      -0.23380134999752045,
+      -1.000258445739746
+    ],
+    [
+      0.7254834771156311,
+      0.24909573793411255,
+      0.9941244125366211
+    ]
+  ],
+  "normalized_bounds_blender": [
+    [
+      -0.657036304473877,
+      -0.21791572868824005,
+      0.0
+    ],
+    [
+      0.6570363640785217,
+      0.21791572868824005,
+      1.7999999523162842
+    ]
+  ],
+  "vertices": 160323,
+  "polygons": 320650,
+  "mesh_objects": 1,
+  "textures": false,
+  "armature": false,
+  "measurement_validation": "Altura total y suelo verificados. Las longitudes anatómicas y el ángulo de los brazos no están validados por un esqueleto; requiere revisión de modelado."
+}

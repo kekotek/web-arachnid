@@ -1,6 +1,6 @@
 {
   "character": "Bruce",
-  "version": 1,
+  "version": 2,
   "units": "cm",
   "height": 180,
   "basis": "Medidas de diseño del personaje, en reposo y sin perspectiva. La altura total incluye el calzado y la silueta de la cabeza usada en la referencia visual.",
@@ -49,6 +49,15 @@
     "Los trajes y los guantes cambian el volumen exterior, pero no alargan huesos ni cambian la posición de las articulaciones.",
     "En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.",
     "Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.",
-    "Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual."
-  ]
+    "Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual.",
+    "El arte conceptual de control y las referencias de modelado utilizan pose A, con ambos brazos rectos a 45 grados del torso vertical en el plano frontal. Los perfiles muestran la misma pose con escorzo; no girar los brazos hacia delante. Las alturas de codos, muñecas y dedos se derivan de estas longitudes mediante trigonometría."
+  ],
+  "modeling_pose": {
+    "name": "A-pose",
+    "arm_angle_from_torso_degrees": 45,
+    "elbow_flexion_degrees": 0,
+    "plane": "frontal",
+    "palms": "toward_thighs",
+    "reference": "Pose ortográfica para arte conceptual y referencias de modelado. Conservar todas las longitudes; cambiar únicamente la orientación de ambos brazos."
+  }
 }

@@ -23,3 +23,5 @@ El material de Bruce está [organizado por variante](concept-art/assets/characte
 ## Personaje principal
 
 El personaje principal está inspirado en **Spider-Man**.
+
+El arte de control y las referencias para modelado usan **pose A, con brazos rectos a 45° del torso**, conservando la altura de 180 cm y todas las medidas maestras. Las guías calculan las cotas de esta pose desde las longitudes originales.

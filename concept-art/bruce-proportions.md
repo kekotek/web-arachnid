@@ -27,7 +27,7 @@ Las longitudes de las extremidades se miden entre centros de articulación. La l
 
 La altura se cierra exactamente: **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El largo horizontal del pie no se suma a esta altura. La cabeza ocupa aproximadamente una séptima parte de la altura total.
 
-## Alturas de referencia desde el suelo
+## Alturas en reposo, con brazos junto al cuerpo
 
 | Punto | Altura |
 | --- | --- |
@@ -43,6 +43,22 @@ La altura se cierra exactamente: **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El larg
 | Rodillas | 49 cm |
 | Tobillos | 8 cm |
 | Suelo | 0 cm |
+
+## Pose A obligatoria para modelado: brazos a 45°
+
+Los brazos rectos se separan 45° del torso vertical en el plano frontal. Hombro, codo, muñeca y mano conservan sus longitudes. En los perfiles, la misma pose se ve con escorzo.
+
+| Punto | Altura en pose A |
+| --- | --- |
+| Hombros | 146 cm |
+| Codos | 123,37 cm |
+| Muñecas | 104,99 cm |
+| Puntas de los dedos | 92,26 cm |
+
+Altura del punto = 146 cm − longitud acumulada del brazo × cos(45°). Las cotas de 114, 88 y 70 cm corresponden a brazos verticales en reposo; no se usan para la pose A.
+
+La separación entre puntas de los dedos en pose A es 143,48 cm. La envergadura de 188 cm corresponde a brazos horizontales.
+
 
 ## Anchos y profundidades
 
@@ -70,6 +86,7 @@ La altura se cierra exactamente: **26 + 8 + 51 + 46 + 41 + 8 = 180 cm**. El larg
 - En una pose flexionada o en perspectiva cambia la altura aparente; las longitudes de cada segmento se conservan.
 - Las vistas de control usan cámara ortográfica, escala común y línea de suelo compartida.
 - Las medidas del maniquí gobiernan el cuerpo; las referencias de modelado 3D gobiernan el rostro, el peinado, la ropa y la identidad visual.
+- El arte conceptual de control y las referencias de modelado utilizan pose A, con ambos brazos rectos a 45 grados del torso vertical en el plano frontal. Los perfiles muestran la misma pose con escorzo; no girar los brazos hacia delante. Las alturas de codos, muñecas y dedos se derivan de estas longitudes mediante trigonometría.
 
 - La fuente única de medidas es [bruce-proportions.json](bruce-proportions.json). Si cambia una medida, se debe regenerar la ficha y comprobar que la suma de alturas sigue siendo 180 cm.
 - El maniquí fija medidas objetivo. Las ilustraciones existentes se usan para la identidad visual; deben compararse con estas cotas al revisar sus proporciones.

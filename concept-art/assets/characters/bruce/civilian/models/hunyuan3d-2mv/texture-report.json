@@ -1,0 +1,24 @@
+{
+  "method": "Local Blender four-view projection and UV baking; NOT Hunyuan3D-Paint",
+  "source_mesh": "bruce-hunyuan-180cm.blend",
+  "model": "bruce-hunyuan-textured-180cm.glb",
+  "blender_file": "bruce-hunyuan-textured-180cm.blend",
+  "base_color": "textures/bruce-base-color.png",
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "geometry_unchanged": true,
+  "height_meters": 1.7999999523162842,
+  "vertices": 160323,
+  "triangles": 320650,
+  "armature": false,
+  "status": "Projection draft for visual review; seams and projected details need refinement",
+  "reference_views": [
+    "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/front.png",
+    "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/back.png",
+    "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/left.png",
+    "assets/characters/bruce/civilian/modeling-references/hunyuan3d-2mv/right.png"
+  ],
+  "api_limitation": "Current Spark API exposes geometry-only /generate; texture inference requires a Hunyuan3D-Paint service."
+}
